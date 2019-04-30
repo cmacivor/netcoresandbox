@@ -1,0 +1,104 @@
+@page "/caseform"
+@using WebApplication1.Data
+@inject OffenseService OffenseService
+@inject IJSRuntime JsRuntime;
+
+<h3>Case Form Sandbox</h3>
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+<br/>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="form-group">
+                      <label for="inputPlacementCharges">Placement Charges*</label>
+                      <input type="text" bind="@searchParam"  onblur="@GetOffensesBySearchString"  class="form-control" id="inputPlacementCharges" placeholder="Pick Charge Code"/>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-m-12">
+                <ul id="ulSearchResult" class="list-group">
+                    @if (offenses != null && offenses.Any())
+                    {
+                        @foreach (var offense in offenses)
+                        {   
+                            var item = offense;
+                            <li class="list-group-item"><span style="cursor: pointer;" onclick="@(e => @RemoveItem(@offense.Description))"  class="oi oi-x"></span>@offense.Description </li>
+                        }
+                    }                 
+                </ul>            
+              </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<h4>Lifecycle events</h4>
+<br>
+@foreach (var evt in LifecycleEvents) { 
+    <li>@evt</li>
+}
+
+
+@functions {
+    List<string> LifecycleEvents { get; set; } = new List<string>();
+
+    List<Offense> offenses;
+    private string searchParam;
+
+    private string itemToRemove;
+
+    protected override void OnInit()
+    {
+        LifecycleEvents.Add("OnInit");
+    }
+
+    protected override void OnAfterRender()
+    {
+        LifecycleEvents.Add("OnAfterRender");
+    }
+
+    public async Task<List<Offense>> GetOffensesBySearchString()
+    {
+        if (offenses != null && offenses.Any())
+        {
+            offenses.Clear();
+        }
+
+        if (!string.IsNullOrEmpty(searchParam))
+        {
+            offenses = await OffenseService.GetOffenses();
+
+            offenses = offenses.Where(x => offenses.Any(y => x.Description.ToLower().Contains(searchParam))).ToList();
+            searchParam = string.Empty;
+        }
+        
+        return offenses;
+    }
+
+
+    public void RemoveItem(string test)
+    {
+       var itemToRemove = offenses.FirstOrDefault(x => x.Description == test);
+
+       offenses.Remove(itemToRemove); 
+    }
+
+}
