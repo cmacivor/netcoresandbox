@@ -44,3 +44,5 @@ c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\Razor\Pages\Todo.razor.g.cs
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\CaseForm.razor.g.cs
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\Razor\Pages\CaseForm.razor.g.cs
+c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\BingMap.razor.g.cs
+c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\Razor\Pages\BingMap.razor.g.cs

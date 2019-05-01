@@ -77,6 +77,7 @@
 
     public async Task<List<Offense>> GetOffensesBySearchString()
     {
+        //need to clear the list before we try loading it again, otherwise it will append from previous search
         if (offenses != null && offenses.Any())
         {
             offenses.Clear();
