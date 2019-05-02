@@ -10,14 +10,29 @@ public class BingServer
             public List<double> coordinates { get; set; }
         }
 
+        [DataContract(Name = "Address" )]
         public class Address
         {
+            
+            [DataMember(Name = "addressLine")]
             public string addressLine { get; set; }
+
+            [DataMember(Name = "adminDistrict")]
             public string adminDistrict { get; set; }
+
+            [DataMember(Name = "adminDistrict2")]
             public string adminDistrict2 { get; set; }
+
+            [DataMember(Name = "countryRegion")]
             public string countryRegion { get; set; }
+
+            [DataMember(Name = "formattedAddress")]
             public string formattedAddress { get; set; }
+
+            [DataMember(Name = "locality")]
             public string locality { get; set; }
+
+            [DataMember(Name = "postalCode")]
             public string postalCode { get; set; }
         }
 
@@ -29,16 +44,17 @@ public class BingServer
             public List<string> usageTypes { get; set; }
         }
 
+        [DataContract(Name = "Resource" )]
         public class Resource
         {
             public string __type { get; set; }
             public List<double> bbox { get; set; }
 
-            //[DataMember(Name = "name")]
+            [DataMember(Name = "name")]
             public string name { get; set; }
             public Point point { get; set; }
 
-            //[DataMember(Name = "address")]
+            [DataMember(Name = "address")]
             public Address address { get; set; }
             public string confidence { get; set; }
             public string entityType { get; set; }
@@ -46,9 +62,10 @@ public class BingServer
             public List<string> matchCodes { get; set; }
         }
 
+        [DataContract(Name = "ResourceSet" )]
         public class ResourceSet
         {
-            //[DataMember(Name = "estimatedTotal")]
+            [DataMember(Name = "estimatedTotal")]
             public int? estimatedTotal { get; set; }
 
             //[DataMember(Name = "resources")]
@@ -67,7 +84,7 @@ public class BingServer
             [DataMember(Name = "copyright")]
             public string copyright { get; set; }
 
-            //[DataMember(Name = "resourceSets")]
+            [DataMember(Name = "resourceSets")]
             public List<ResourceSet> resourceSets { get; set; }
             public int? statusCode { get; set; }
             public string statusDescription { get; set; }
