@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 
 public class BingServer
 {
@@ -32,8 +33,12 @@ public class BingServer
         {
             public string __type { get; set; }
             public List<double> bbox { get; set; }
+
+            //[DataMember(Name = "name")]
             public string name { get; set; }
             public Point point { get; set; }
+
+            //[DataMember(Name = "address")]
             public Address address { get; set; }
             public string confidence { get; set; }
             public string entityType { get; set; }
@@ -43,15 +48,26 @@ public class BingServer
 
         public class ResourceSet
         {
+            //[DataMember(Name = "estimatedTotal")]
             public int? estimatedTotal { get; set; }
+
+            //[DataMember(Name = "resources")]
             public List<Resource> resources { get; set; }
         }
 
+        [DataContract(Name = "RootObject" )]
         public class RootObject
         {
+            [DataMember(Name = "authenticationResultCode")]
             public string authenticationResultCode { get; set; }
+
+            [DataMember(Name = "brandLogoUri")]
             public string brandLogoUri { get; set; }
+
+            [DataMember(Name = "copyright")]
             public string copyright { get; set; }
+
+            //[DataMember(Name = "resourceSets")]
             public List<ResourceSet> resourceSets { get; set; }
             public int? statusCode { get; set; }
             public string statusDescription { get; set; }

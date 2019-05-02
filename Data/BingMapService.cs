@@ -1,22 +1,41 @@
 using System.Collections.Generic;
+using System.IO;
 using System.Net.Http;
 using System.Runtime.Serialization.Json;
+using System.Text;
 using System.Threading.Tasks;
 
 public class BingMapService
 {
-    public async Task<List<BingServer.Address>> GetAddresses()
+    public async Task<BingServer.RootObject> GetAddresses()
     {
           var client = new HttpClient();
 
-          var addresses = new List<BingServer.Address>();
+          //var addresses = new BingServer();
 
-          var streamTasl = client.GetStreamAsync("https://dev.virtualearth.net/REST/v1/Locations?countryRegion=US&amp;addressLine=broad&key=AioE2WYI4PFEB6QJ05ws3SYzEfBmT4Dq4GcO-ACemmZnFi5pyKjXeE44i9Qz0QOS");
+          //var streamTasl = await client.GetStreamAsync("https://dev.virtualearth.net/REST/v1/Locations?countryRegion=US&addressLine=2810%20Fendall&key=AioE2WYI4PFEB6QJ05ws3SYzEfBmT4Dq4GcO-ACemmZnFi5pyKjXeE44i9Qz0QOS").ConfigureAwait(continueOnCapturedContext: false);
 
-          var serializer = new DataContractJsonSerializer(typeof(List<BingServer.Address>));
+        //   var jsonResult = await client.GetStringAsync("https://dev.virtualearth.net/REST/v1/Locations?countryRegion=US&amp;addressLine=broad&key=AioE2WYI4PFEB6QJ05ws3SYzEfBmT4Dq4GcO-ACemmZnFi5pyKjXeE44i9Qz0QOS");
+          var jsonResult = await client.GetStringAsync("https://dev.virtualearth.net/REST/v1/Locations?countryRegion=US&addressLine=2810%20Fendall&key=AioE2WYI4PFEB6QJ05ws3SYzEfBmT4Dq4GcO-ACemmZnFi5pyKjXeE44i9Qz0QOS");
 
-          addresses = serializer.ReadObject(await streamTasl) as List<BingServer.Address>;
+          var serializer = new DataContractJsonSerializer(typeof(BingServer.RootObject));
+     
+          //addresses = serializer.ReadObject(await streamTasl) as BingServer;
 
-          return addresses;
+        //   var bingServer = new BingServer();
+
+        MemoryStream ms = new MemoryStream(Encoding.UTF8.GetBytes(jsonResult));
+
+        //   var newSerializer = new DataContractJsonSerializer(bingServer.GetType());
+         var bingServer = serializer.ReadObject(ms) as BingServer.RootObject;
+         ms.Close();
+
+
+          //return addresses;
+          //return bingServer;
+
+          //var objects =  serializer.ReadObject(streamTasl) as BingServer.RootObject;
+
+         return bingServer;
     }
 }

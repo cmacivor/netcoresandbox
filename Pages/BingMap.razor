@@ -1,5 +1,6 @@
 @page "/bingmap"
 @inject IJSRuntime JsRuntime;
+@inject BingMapService BingMapService
 
 <h2>Bing address validation demo</h2>
 <label>Client Address:</label>
@@ -29,9 +30,12 @@
 
 @functions {
 
-    public Task<object> OpenModal()
+    public async Task<object> OpenModal()
     {
-        return JsRuntime.InvokeAsync<object>("BingMap.OpenModalOnSearch"); //.InvokeAsync<object>("OpenModalOnSearch", null)
+        //first let's call the Bing service
+        var address = await BingMapService.GetAddresses();
+
+        return JsRuntime.InvokeAsync<object>("BingMap.OpenModalOnSearch"); 
     }
 
 }

@@ -10,9 +10,12 @@ c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\WebApplication1.csproj
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\WebApplication1.csproj.CoreCompileInputs.cache
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\WebApplication1.RazorComponent.input.cache
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\RazorDeclaration\App.razor.g.cs
+c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\BingMap.razor.g.cs
+c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\CaseForm.razor.g.cs
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\Counter.razor.g.cs
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\FetchData.razor.g.cs
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\Index.razor.g.cs
+c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\Todo.razor.g.cs
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\_Imports.razor.g.cs
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
@@ -22,9 +25,12 @@ c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\WebApplication1.TagHel
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\WebApplication1.TagHelpers.output.cache
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\WebApplication1.RazorCoreGenerate.cache
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\Razor\App.razor.g.cs
+c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\Razor\Pages\BingMap.razor.g.cs
+c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\Razor\Pages\CaseForm.razor.g.cs
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\Razor\Pages\Counter.razor.g.cs
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\Razor\Pages\FetchData.razor.g.cs
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\Razor\Pages\Index.razor.g.cs
+c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\Razor\Pages\Todo.razor.g.cs
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\Razor\Pages\_Imports.razor.g.cs
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\Razor\Shared\MainLayout.razor.g.cs
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\Razor\Shared\NavMenu.razor.g.cs
@@ -40,9 +46,3 @@ c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\WebApplication1.Views.
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\WebApplication1.dll
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\WebApplication1.pdb
 C:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\WebApplication1.csproj.CopyComplete
-c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\Todo.razor.g.cs
-c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\Razor\Pages\Todo.razor.g.cs
-c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\CaseForm.razor.g.cs
-c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\Razor\Pages\CaseForm.razor.g.cs
-c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\BingMap.razor.g.cs
-c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\Razor\Pages\BingMap.razor.g.cs
