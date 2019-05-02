@@ -4,6 +4,7 @@ using System.Net.Http;
 using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 public class BingMapService
 {
@@ -20,22 +21,24 @@ public class BingMapService
 
           var serializer = new DataContractJsonSerializer(typeof(BingServer.RootObject));
      
-          //addresses = serializer.ReadObject(await streamTasl) as BingServer;
+          //var addresses = serializer.ReadObject(streamTasl) as BingServer.RootObject;
 
         //   var bingServer = new BingServer();
 
-        MemoryStream ms = new MemoryStream(Encoding.UTF8.GetBytes(jsonResult));
+        //MemoryStream ms = new MemoryStream(Encoding.UTF8.GetBytes(jsonResult));
 
         //   var newSerializer = new DataContractJsonSerializer(bingServer.GetType());
-         var bingServer = serializer.ReadObject(ms) as BingServer.RootObject;
-         ms.Close();
-
-
+         //var bingServer = serializer.ReadObject(ms) as BingServer.RootObject;
+         //ms.Close();
+         
+          var result = JsonConvert.DeserializeObject<BingServer.RootObject>(jsonResult);
+        
+        return result;
           //return addresses;
           //return bingServer;
 
           //var objects =  serializer.ReadObject(streamTasl) as BingServer.RootObject;
 
-         return bingServer;
+         //return bingServer;
     }
 }

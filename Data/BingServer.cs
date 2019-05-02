@@ -68,7 +68,7 @@ public class BingServer
             [DataMember(Name = "estimatedTotal")]
             public int? estimatedTotal { get; set; }
 
-            //[DataMember(Name = "resources")]
+            [DataMember(Name = "resources")]
             public List<Resource> resources { get; set; }
         }
 
