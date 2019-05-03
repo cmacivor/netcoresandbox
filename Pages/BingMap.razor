@@ -49,7 +49,7 @@
 
 
 @functions {
-
+  //not sure, but I think these need to be private
     private BingServer.Address RetrievedAddress = new BingServer.Address();
 
     private BingServer.Address AddressForDisplay = new BingServer.Address();
@@ -67,7 +67,7 @@
     //Note: whenever running a javascript method, it needs to be async. Not sure if it needs to return a Task<object>, but this is the only way I can get it to work right now.
     private async Task<object> CloseModal()
     {
-
+       //this is apparently all that's required to populate a separate set of fields on the page when this method is invoked. The RetrievedAddress object still has its values
        AddressForDisplay = RetrievedAddress;
 
 
