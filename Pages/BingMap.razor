@@ -17,7 +17,11 @@
         </button>
       </div>
       <div class="modal-body">
-          
+          <div class="row">
+             <div class="alert alert-primary">
+                @RetrievedAddress.addressLine
+             </div>
+          </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -30,10 +34,14 @@
 
 @functions {
 
+    private BingServer.Address RetrievedAddress = new BingServer.Address();
+
     public async Task<object> OpenModal()
     {
         //first let's call the Bing service
         var address = await BingMapService.GetAddresses();
+
+        RetrievedAddress = address.resourceSets.FirstOrDefault().resources.FirstOrDefault().address;
 
         return JsRuntime.InvokeAsync<object>("BingMap.OpenModalOnSearch"); 
     }
