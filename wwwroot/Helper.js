@@ -8,4 +8,7 @@ window.CaseForm.ClearList = (elementId) => {
 window.BingMap.OpenModalOnSearch = () => {
     $("#addressModal").modal('show');
     //return alert('test');
+};
+window.BingMap.HideModal = () => {
+    $("#addressModal").modal('hide');
 }

@@ -18,7 +18,7 @@
       </div>
       <div class="modal-body">
           <div class="row">
-             <div class="alert alert-primary">
+             <div onclick="@CloseModal" class="alert alert-primary">
                 @RetrievedAddress.addressLine
              </div>
           </div>
@@ -30,11 +30,29 @@
     </div>
   </div>
 </div>
+<br>
+<h4>You selected</h4>
+<div class="row">
+   <div class="col-md-6">
+     <div class="form-group">
+       <label><strong>Retrieved Address Line</strong></label>
+       <label>@AddressForDisplay.addressLine</label>
+     </div>
+   </div>
+   <div class="col-md-6">
+     <div class="form-group">
+       <label><strong>Country</strong></label>
+       <label>@AddressForDisplay.countryRegion </label>
+     </div>
+   </div>
+</div>
 
 
 @functions {
 
     private BingServer.Address RetrievedAddress = new BingServer.Address();
+
+    private BingServer.Address AddressForDisplay = new BingServer.Address();
 
     public async Task<object> OpenModal()
     {
@@ -44,6 +62,16 @@
         RetrievedAddress = address.resourceSets.FirstOrDefault().resources.FirstOrDefault().address;
 
         return JsRuntime.InvokeAsync<object>("BingMap.OpenModalOnSearch"); 
+    }
+
+    //Note: whenever running a javascript method, it needs to be async. Not sure if it needs to return a Task<object>, but this is the only way I can get it to work right now.
+    private async Task<object> CloseModal()
+    {
+
+       AddressForDisplay = RetrievedAddress;
+
+
+       return  await JsRuntime.InvokeAsync<object>("BingMap.HideModal"); 
     }
 
 }
