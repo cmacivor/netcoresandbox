@@ -1,9 +1,10 @@
 @page "/register"
+@inject IJSRuntime JsRuntime;
 
 <h3>Register</h3>
 <br>
-<div style="display:none"  class="alert alert-error">
-    Please enter all fields
+<div id="divError" style="display:none"  class="alert alert-danger" role="alert">
+    @errorMessage
 </div>
 <div class="row">
     <div class="col-md-6">
@@ -52,14 +53,30 @@
     private string password = string.Empty;
     private string confirmPassword = string.Empty;
     private string userRole = string.Empty;
+    private string errorMessage = string.Empty;
 
-    private void RegisterUser()
+    private async void RegisterUser()
     {
         if (string.IsNullOrEmpty(userName) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(confirmPassword))
         {
+            await JsRuntime.InvokeAsync<object>("Register.OpenError");
+            
+            errorMessage = " Please enter all fields";
+
             return;
         }
 
-        var test = userRole;
+        if (password != confirmPassword )
+        {
+            await JsRuntime.InvokeAsync<object>("Register.OpenError");
+            
+            errorMessage = "Passwords don't matchs";
+
+            return;
+        }
+
+        //save the user here
+
+
     }
 }
