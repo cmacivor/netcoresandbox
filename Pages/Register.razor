@@ -2,6 +2,9 @@
 
 <h3>Register</h3>
 <br>
+<div style="display:none"  class="alert alert-error">
+    Please enter all fields
+</div>
 <div class="row">
     <div class="col-md-6">
         <div class="form-group">
@@ -30,7 +33,7 @@
     <div class="col-md-6">
         <div class="form-group">
             <label for="ddlUserRole">User Role*</label>
-            <select name="ddlUserRole">
+            <select bind="@userRole" name="ddlUserRole">
                 <option value=""></option>
                 <option value="AdultAdmin">AdultAdmin</option>
                 <option value="AdultCaseManager">AdultCaseManager</option>
@@ -40,7 +43,7 @@
 </div>
 <div class="row">
     <div class="col-md-6">
-        <button class="btn btn-primary" id="btnRegister">Register</button>
+        <button class="btn btn-primary" onclick="@RegisterUser" id="btnRegister">Register</button>
     </div>
 </div>
 
@@ -48,4 +51,15 @@
     private string userName = string.Empty;
     private string password = string.Empty;
     private string confirmPassword = string.Empty;
+    private string userRole = string.Empty;
+
+    private void RegisterUser()
+    {
+        if (string.IsNullOrEmpty(userName) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(confirmPassword))
+        {
+            return;
+        }
+
+        var test = userRole;
+    }
 }
