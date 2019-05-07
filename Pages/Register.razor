@@ -1,0 +1,51 @@
+@page "/register"
+
+<h3>Register</h3>
+<br>
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group">
+            <label for="inputUserName">User Name*</label>
+            <input type="text" bind="@userName"  class="form-control" id="inputUserName" placeholder="User Name"/>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group">
+            <label for="inputPassword">Password*</label>
+            <input type="text" bind="@password"  class="form-control" id="inputPassword" placeholder="Password"/>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group">
+            <label for="inputPasswordd">Confirm Password*</label>
+            <input type="text" bind="@confirmPassword"  class="form-control" id="inputConfirmPassword" placeholder="Confirm Password"/>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group">
+            <label for="ddlUserRole">User Role*</label>
+            <select name="ddlUserRole">
+                <option value=""></option>
+                <option value="AdultAdmin">AdultAdmin</option>
+                <option value="AdultCaseManager">AdultCaseManager</option>
+            </select>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <button class="btn btn-primary" id="btnRegister">Register</button>
+    </div>
+</div>
+
+@functions {
+    private string userName = string.Empty;
+    private string password = string.Empty;
+    private string confirmPassword = string.Empty;
+}

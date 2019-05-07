@@ -757,13 +757,13 @@
       },
       {
         "Kind": "Components.Component",
-        "Name": "WebApplication1.Pages.__generated__BingMap",
+        "Name": "WebApplication1.Pages.Register",
         "AssemblyName": "WebApplication1",
         "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
           {
-            "TagName": "__generated__BingMap",
+            "TagName": "Register",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -775,18 +775,18 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApplication1.Pages.__generated__BingMap"
+          "Common.TypeName": "WebApplication1.Pages.Register"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "WebApplication1.Pages.__generated__BingMap",
+        "Name": "WebApplication1.Pages.Register",
         "AssemblyName": "WebApplication1",
         "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
           {
-            "TagName": "WebApplication1.Pages.__generated__BingMap",
+            "TagName": "WebApplication1.Pages.Register",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -798,7 +798,54 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApplication1.Pages.__generated__BingMap",
+          "Common.TypeName": "WebApplication1.Pages.Register",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "WebApplication1.Pages.__generated__Register",
+        "AssemblyName": "WebApplication1",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "__generated__Register",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "WebApplication1.Pages.__generated__Register"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "WebApplication1.Pages.__generated__Register",
+        "AssemblyName": "WebApplication1",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "WebApplication1.Pages.__generated__Register",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "WebApplication1.Pages.__generated__Register",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -10497,6 +10544,11 @@
     {
       "FilePath": "Pages\\CaseForm.razor",
       "TargetPath": "Pages\\CaseForm.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "Pages\\Register.razor",
+      "TargetPath": "Pages\\Register.razor",
       "FileKind": "component"
     },
     {

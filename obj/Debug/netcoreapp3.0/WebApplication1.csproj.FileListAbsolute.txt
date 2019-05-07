@@ -46,3 +46,5 @@ c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\WebApplication1.Views.
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\WebApplication1.dll
 c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\WebApplication1.pdb
 C:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\WebApplication1.csproj.CopyComplete
+c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\Register.razor.g.cs
+c:\Users\macivoce\WebApplication1\obj\Debug\netcoreapp3.0\Razor\Pages\Register.razor.g.cs
