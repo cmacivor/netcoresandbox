@@ -6,6 +6,15 @@
 <br>
 <div id="divError" style="display:none"  class="alert alert-danger" role="alert">
     @errorMessage
+
+    @if (@modelStateErrors.Values.Any())
+    {
+        foreach (var error in @modelStateErrors.Values.FirstOrDefault())
+        {
+            @error;
+        }
+    }
+    
 </div>
 <div class="row">
     <div class="col-md-6">
@@ -56,6 +65,8 @@
     private string userRole = string.Empty;
     private string errorMessage = string.Empty;
 
+    private Dictionary<string, string[]> modelStateErrors = new Dictionary<string, string[]>();
+
     private async void RegisterUser()
     {
         if (string.IsNullOrEmpty(userName) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(confirmPassword))
@@ -84,7 +95,23 @@
             UserRole = userRole
         };
 
-        await RegistrationService.RegisterUser(user);
+       var errors = await RegistrationService.RegisterUser(user);
 
+       if (errors.ModelState.Any())
+       {       
+            modelStateErrors = errors.ModelState;
+
+            await JsRuntime.InvokeAsync<object>("Register.OpenError");
+
+            //get the page in sync with the server- like refreshing a page in a traditional app. This is necessary because without it, the div opens without the populated error message
+            //in Blazor, every single thing seems to cause the page to fire again- even making an an API call
+            this.StateHasChanged();
+       }
+       else
+       {
+            errorMessage = "Registered!";
+
+            await JsRuntime.InvokeAsync<object>("Register.OpenError");
+       }
     }
 }

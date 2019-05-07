@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 
 public class RegistrationService
 {
-    public async Task RegisterUser(Registration registration)
+    public async Task<Response> RegisterUser(Registration registration)
     {
         var client = new HttpClient();
 
@@ -20,6 +20,6 @@ public class RegistrationService
 
         var deserialized = JsonConvert.DeserializeObject<Response>(result);
 
-        return;
+        return deserialized;
     }
 }
