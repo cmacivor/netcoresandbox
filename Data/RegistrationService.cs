@@ -1,4 +1,5 @@
 
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
@@ -16,6 +17,8 @@ public class RegistrationService
         var response = await client.PostAsync("https://justiceservicesdev.richva.ci.richmond.va.us/services/empoweradultapi/api/account/register", contentData);
 
         var result = response.Content.ReadAsStringAsync().Result;
+
+        var deserialized = JsonConvert.DeserializeObject<Response>(result);
 
         return;
     }
