@@ -1,5 +1,6 @@
 @page "/register"
 @inject IJSRuntime JsRuntime;
+@inject RegistrationService RegistrationService;
 
 <h3>Register</h3>
 <br>
@@ -76,7 +77,14 @@
         }
 
         //save the user here
+        var user = new Registration {
+            userName = userName,
+            password = password,
+            confirmPassword = confirmPassword,
+            UserRole = userRole
+        };
 
+        await RegistrationService.RegisterUser(user);
 
     }
 }
