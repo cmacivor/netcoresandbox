@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\macivoce\\BlazorDemo\\WebApplication1.csproj": {}
+    "C:\\Users\\macivoce\\BlazorDemo\\BlazorDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\macivoce\\BlazorDemo\\WebApplication1.csproj": {
+    "C:\\Users\\macivoce\\BlazorDemo\\BlazorDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\macivoce\\BlazorDemo\\WebApplication1.csproj",
-        "projectName": "WebApplication1",
-        "projectPath": "C:\\Users\\macivoce\\BlazorDemo\\WebApplication1.csproj",
+        "projectUniqueName": "C:\\Users\\macivoce\\BlazorDemo\\BlazorDemo.csproj",
+        "projectName": "BlazorDemo",
+        "projectPath": "C:\\Users\\macivoce\\BlazorDemo\\BlazorDemo.csproj",
         "packagesPath": "C:\\Users\\macivoce\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\macivoce\\BlazorDemo\\obj\\",
         "projectStyle": "PackageReference",
@@ -72,11 +72,7 @@
             "net461"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": [
-            "Microsoft.AspNetCore.App",
-            "Microsoft.NETCore.App"
-          ]
+          "warn": true
         }
       }
     }
