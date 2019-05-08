@@ -22,7 +22,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v3.0": {
-      "WebApplication1/1.0.0": {
+      "BlazorDemo/1.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.0.0-preview4.19212.13",
           "System.Runtime.Serialization.Json": "4.3.0",
@@ -309,10 +309,10 @@
           "WindowsBase": "4.0.0.0"
         },
         "runtime": {
-          "WebApplication1.dll": {}
+          "BlazorDemo.dll": {}
         },
         "compile": {
-          "WebApplication1.dll": {}
+          "BlazorDemo.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/3.0.0-preview4.19212.13": {},
@@ -2324,7 +2324,7 @@
     }
   },
   "libraries": {
-    "WebApplication1/1.0.0": {
+    "BlazorDemo/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

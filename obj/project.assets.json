@@ -2771,9 +2771,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\macivoce\\BlazorDemo\\WebApplication1.csproj",
-      "projectName": "WebApplication1",
-      "projectPath": "C:\\Users\\macivoce\\BlazorDemo\\WebApplication1.csproj",
+      "projectUniqueName": "C:\\Users\\macivoce\\BlazorDemo\\BlazorDemo.csproj",
+      "projectName": "BlazorDemo",
+      "projectPath": "C:\\Users\\macivoce\\BlazorDemo\\BlazorDemo.csproj",
       "packagesPath": "C:\\Users\\macivoce\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\macivoce\\BlazorDemo\\obj\\",
       "projectStyle": "PackageReference",

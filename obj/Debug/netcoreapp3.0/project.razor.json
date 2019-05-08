@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\macivoce\\BlazorDemo\\WebApplication1.csproj",
+  "FilePath": "c:\\Users\\macivoce\\BlazorDemo\\BlazorDemo.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -400,55 +400,318 @@
       },
       {
         "Kind": "Components.Component",
-        "Name": "WebApplication1.App",
-        "AssemblyName": "WebApplication1",
+        "Name": "BlazorDemo.Pages.__generated__Counter",
+        "AssemblyName": "BlazorDemo",
         "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
           {
-            "TagName": "App",
+            "TagName": "__generated__Counter",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
             "Diagnostics": []
           }
         ],
-        "BoundAttributes": [],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "IncrementAmount",
+            "TypeName": "System.Int32",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "IncrementAmount"
+            }
+          }
+        ],
         "AllowedChildTags": [],
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApplication1.App"
+          "Common.TypeName": "BlazorDemo.Pages.__generated__Counter"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "WebApplication1.App",
-        "AssemblyName": "WebApplication1",
+        "Name": "BlazorDemo.Pages.__generated__Counter",
+        "AssemblyName": "BlazorDemo",
         "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
           {
-            "TagName": "WebApplication1.App",
+            "TagName": "BlazorDemo.Pages.__generated__Counter",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
             "Diagnostics": []
           }
         ],
-        "BoundAttributes": [],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "IncrementAmount",
+            "TypeName": "System.Int32",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "IncrementAmount"
+            }
+          }
+        ],
         "AllowedChildTags": [],
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApplication1.App",
+          "Common.TypeName": "BlazorDemo.Pages.__generated__Counter",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "WebApplication1.Pages.BingMap",
-        "AssemblyName": "WebApplication1",
+        "Name": "BlazorDemo.Pages.__generated__BingMap",
+        "AssemblyName": "BlazorDemo",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "__generated__BingMap",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorDemo.Pages.__generated__BingMap"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorDemo.Pages.__generated__BingMap",
+        "AssemblyName": "BlazorDemo",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorDemo.Pages.__generated__BingMap",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorDemo.Pages.__generated__BingMap",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorDemo.Pages.__generated__Index",
+        "AssemblyName": "BlazorDemo",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "__generated__Index",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorDemo.Pages.__generated__Index"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorDemo.Pages.__generated__Index",
+        "AssemblyName": "BlazorDemo",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorDemo.Pages.__generated__Index",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorDemo.Pages.__generated__Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorDemo.Pages.__generated__Register",
+        "AssemblyName": "BlazorDemo",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "__generated__Register",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorDemo.Pages.__generated__Register"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorDemo.Pages.__generated__Register",
+        "AssemblyName": "BlazorDemo",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorDemo.Pages.__generated__Register",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorDemo.Pages.__generated__Register",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorDemo.Pages.__generated__Todo",
+        "AssemblyName": "BlazorDemo",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "__generated__Todo",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorDemo.Pages.__generated__Todo"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorDemo.Pages.__generated__Todo",
+        "AssemblyName": "BlazorDemo",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorDemo.Pages.__generated__Todo",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorDemo.Pages.__generated__Todo",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorDemo.Pages.__generated__FetchData",
+        "AssemblyName": "BlazorDemo",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "__generated__FetchData",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorDemo.Pages.__generated__FetchData"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorDemo.Pages.__generated__FetchData",
+        "AssemblyName": "BlazorDemo",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorDemo.Pages.__generated__FetchData",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorDemo.Pages.__generated__FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorDemo.Pages.BingMap",
+        "AssemblyName": "BlazorDemo",
         "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
@@ -465,18 +728,18 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApplication1.Pages.BingMap"
+          "Common.TypeName": "BlazorDemo.Pages.BingMap"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "WebApplication1.Pages.BingMap",
-        "AssemblyName": "WebApplication1",
+        "Name": "BlazorDemo.Pages.BingMap",
+        "AssemblyName": "BlazorDemo",
         "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
           {
-            "TagName": "WebApplication1.Pages.BingMap",
+            "TagName": "BlazorDemo.Pages.BingMap",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -488,14 +751,14 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApplication1.Pages.BingMap",
+          "Common.TypeName": "BlazorDemo.Pages.BingMap",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "WebApplication1.Pages.CaseForm",
-        "AssemblyName": "WebApplication1",
+        "Name": "BlazorDemo.Pages.CaseForm",
+        "AssemblyName": "BlazorDemo",
         "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
@@ -512,18 +775,18 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApplication1.Pages.CaseForm"
+          "Common.TypeName": "BlazorDemo.Pages.CaseForm"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "WebApplication1.Pages.CaseForm",
-        "AssemblyName": "WebApplication1",
+        "Name": "BlazorDemo.Pages.CaseForm",
+        "AssemblyName": "BlazorDemo",
         "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
           {
-            "TagName": "WebApplication1.Pages.CaseForm",
+            "TagName": "BlazorDemo.Pages.CaseForm",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -535,14 +798,14 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApplication1.Pages.CaseForm",
+          "Common.TypeName": "BlazorDemo.Pages.CaseForm",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "WebApplication1.Pages.Counter",
-        "AssemblyName": "WebApplication1",
+        "Name": "BlazorDemo.Pages.Counter",
+        "AssemblyName": "BlazorDemo",
         "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
@@ -573,18 +836,18 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApplication1.Pages.Counter"
+          "Common.TypeName": "BlazorDemo.Pages.Counter"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "WebApplication1.Pages.Counter",
-        "AssemblyName": "WebApplication1",
+        "Name": "BlazorDemo.Pages.Counter",
+        "AssemblyName": "BlazorDemo",
         "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
           {
-            "TagName": "WebApplication1.Pages.Counter",
+            "TagName": "BlazorDemo.Pages.Counter",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -610,14 +873,14 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApplication1.Pages.Counter",
+          "Common.TypeName": "BlazorDemo.Pages.Counter",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "WebApplication1.Pages.FetchData",
-        "AssemblyName": "WebApplication1",
+        "Name": "BlazorDemo.Pages.FetchData",
+        "AssemblyName": "BlazorDemo",
         "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
@@ -634,18 +897,18 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApplication1.Pages.FetchData"
+          "Common.TypeName": "BlazorDemo.Pages.FetchData"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "WebApplication1.Pages.FetchData",
-        "AssemblyName": "WebApplication1",
+        "Name": "BlazorDemo.Pages.FetchData",
+        "AssemblyName": "BlazorDemo",
         "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
           {
-            "TagName": "WebApplication1.Pages.FetchData",
+            "TagName": "BlazorDemo.Pages.FetchData",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -657,14 +920,14 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApplication1.Pages.FetchData",
+          "Common.TypeName": "BlazorDemo.Pages.FetchData",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "WebApplication1.Pages.Index",
-        "AssemblyName": "WebApplication1",
+        "Name": "BlazorDemo.Pages.Index",
+        "AssemblyName": "BlazorDemo",
         "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
@@ -681,18 +944,18 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApplication1.Pages.Index"
+          "Common.TypeName": "BlazorDemo.Pages.Index"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "WebApplication1.Pages.Index",
-        "AssemblyName": "WebApplication1",
+        "Name": "BlazorDemo.Pages.Index",
+        "AssemblyName": "BlazorDemo",
         "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
           {
-            "TagName": "WebApplication1.Pages.Index",
+            "TagName": "BlazorDemo.Pages.Index",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -704,14 +967,14 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApplication1.Pages.Index",
+          "Common.TypeName": "BlazorDemo.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "WebApplication1.Pages.Register",
-        "AssemblyName": "WebApplication1",
+        "Name": "BlazorDemo.Pages.Register",
+        "AssemblyName": "BlazorDemo",
         "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
@@ -728,18 +991,18 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApplication1.Pages.Register"
+          "Common.TypeName": "BlazorDemo.Pages.Register"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "WebApplication1.Pages.Register",
-        "AssemblyName": "WebApplication1",
+        "Name": "BlazorDemo.Pages.Register",
+        "AssemblyName": "BlazorDemo",
         "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
           {
-            "TagName": "WebApplication1.Pages.Register",
+            "TagName": "BlazorDemo.Pages.Register",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -751,14 +1014,14 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApplication1.Pages.Register",
+          "Common.TypeName": "BlazorDemo.Pages.Register",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "WebApplication1.Pages.Todo",
-        "AssemblyName": "WebApplication1",
+        "Name": "BlazorDemo.Pages.Todo",
+        "AssemblyName": "BlazorDemo",
         "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
@@ -775,18 +1038,18 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApplication1.Pages.Todo"
+          "Common.TypeName": "BlazorDemo.Pages.Todo"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "WebApplication1.Pages.Todo",
-        "AssemblyName": "WebApplication1",
+        "Name": "BlazorDemo.Pages.Todo",
+        "AssemblyName": "BlazorDemo",
         "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
           {
-            "TagName": "WebApplication1.Pages.Todo",
+            "TagName": "BlazorDemo.Pages.Todo",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -798,19 +1061,19 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApplication1.Pages.Todo",
+          "Common.TypeName": "BlazorDemo.Pages.Todo",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "WebApplication1.Pages.__generated__Register",
-        "AssemblyName": "WebApplication1",
+        "Name": "BlazorDemo.__generated__App",
+        "AssemblyName": "BlazorDemo",
         "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
           {
-            "TagName": "__generated__Register",
+            "TagName": "__generated__App",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -822,18 +1085,18 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApplication1.Pages.__generated__Register"
+          "Common.TypeName": "BlazorDemo.__generated__App"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "WebApplication1.Pages.__generated__Register",
-        "AssemblyName": "WebApplication1",
+        "Name": "BlazorDemo.__generated__App",
+        "AssemblyName": "BlazorDemo",
         "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
           {
-            "TagName": "WebApplication1.Pages.__generated__Register",
+            "TagName": "BlazorDemo.__generated__App",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -845,14 +1108,61 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApplication1.Pages.__generated__Register",
+          "Common.TypeName": "BlazorDemo.__generated__App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "WebApplication1.Shared.MainLayout",
-        "AssemblyName": "WebApplication1",
+        "Name": "BlazorDemo.App",
+        "AssemblyName": "BlazorDemo",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "App",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorDemo.App"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorDemo.App",
+        "AssemblyName": "BlazorDemo",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorDemo.App",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorDemo.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "BlazorDemo.Shared.MainLayout",
+        "AssemblyName": "BlazorDemo",
         "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
@@ -869,18 +1179,18 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApplication1.Shared.MainLayout"
+          "Common.TypeName": "BlazorDemo.Shared.MainLayout"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "WebApplication1.Shared.MainLayout",
-        "AssemblyName": "WebApplication1",
+        "Name": "BlazorDemo.Shared.MainLayout",
+        "AssemblyName": "BlazorDemo",
         "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
           {
-            "TagName": "WebApplication1.Shared.MainLayout",
+            "TagName": "BlazorDemo.Shared.MainLayout",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -892,14 +1202,14 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApplication1.Shared.MainLayout",
+          "Common.TypeName": "BlazorDemo.Shared.MainLayout",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "WebApplication1.Shared.NavMenu",
-        "AssemblyName": "WebApplication1",
+        "Name": "BlazorDemo.Shared.NavMenu",
+        "AssemblyName": "BlazorDemo",
         "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
@@ -916,18 +1226,18 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApplication1.Shared.NavMenu"
+          "Common.TypeName": "BlazorDemo.Shared.NavMenu"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "WebApplication1.Shared.NavMenu",
-        "AssemblyName": "WebApplication1",
+        "Name": "BlazorDemo.Shared.NavMenu",
+        "AssemblyName": "BlazorDemo",
         "Documentation": null,
         "TagOutputHint": null,
         "TagMatchingRules": [
           {
-            "TagName": "WebApplication1.Shared.NavMenu",
+            "TagName": "BlazorDemo.Shared.NavMenu",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -939,7 +1249,7 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "WebApplication1.Shared.NavMenu",
+          "Common.TypeName": "BlazorDemo.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -10489,7 +10799,7 @@
     ],
     "CSharpLanguageVersion": 703
   },
-  "RootNamespace": "WebApplication1",
+  "RootNamespace": "BlazorDemo",
   "Documents": [
     {
       "FilePath": "Pages\\Index.razor",

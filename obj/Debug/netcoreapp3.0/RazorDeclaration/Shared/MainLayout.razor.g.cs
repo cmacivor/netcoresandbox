@@ -5,7 +5,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace WebApplication1.Shared
+namespace BlazorDemo.Shared
 {
     #line hidden
     using System;
@@ -18,7 +18,7 @@ namespace WebApplication1.Shared
     using Microsoft.AspNetCore.Components.Layouts;
     using Microsoft.AspNetCore.Components.Routing;
     using Microsoft.JSInterop;
-    using WebApplication1.Shared;
+    using BlazorDemo.Shared;
     public class MainLayout : LayoutComponentBase
     {
         #pragma warning disable 1998

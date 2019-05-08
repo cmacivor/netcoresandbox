@@ -8,9 +8,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using WebApplication1.Data;
+using BlazorDemo.Data;
 
-namespace WebApplication1
+namespace BlazorDemo
 {
     public class Startup
     {

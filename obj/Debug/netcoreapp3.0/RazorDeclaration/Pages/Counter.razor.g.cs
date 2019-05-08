@@ -5,7 +5,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace WebApplication1.Pages
+namespace BlazorDemo.Pages
 {
     #line hidden
     using System;
@@ -18,7 +18,7 @@ namespace WebApplication1.Pages
     using Microsoft.AspNetCore.Components.Layouts;
     using Microsoft.AspNetCore.Components.Routing;
     using Microsoft.JSInterop;
-    using WebApplication1.Shared;
+    using BlazorDemo.Shared;
     [Microsoft.AspNetCore.Components.Layouts.LayoutAttribute(typeof(MainLayout))]
     [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
     public class Counter : Microsoft.AspNetCore.Components.ComponentBase
