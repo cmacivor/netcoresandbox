@@ -56,6 +56,13 @@
 
     public async Task<object> OpenModal()
     {
+
+        var client = new ServiceReference1.NoneyaWebServiceClient();
+
+        var environmentUserName = System.Security.Principal.WindowsIdentity.GetCurrent().Name.ToString();
+
+        var userDetails = await client.GetUserInformationAsync(environmentUserName);
+
         //first let's call the Bing service
         var address = await BingMapService.GetAddresses();
 

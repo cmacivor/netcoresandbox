@@ -2,7 +2,14 @@
   <ItemGroup>
       <PackageReference Include="System.Runtime.Serialization.Json" Version="4.3.0" />
       <PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
+      <PackageReference Include="System.ServiceModel.Duplex" Version="4.4.*" />
+      <PackageReference Include="System.ServiceModel.Http" Version="4.4.*" />
+      <PackageReference Include="System.ServiceModel.NetTcp" Version="4.4.*" />
+      <PackageReference Include="System.ServiceModel.Security" Version="4.4.*" />
    </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <LangVersion>7.3</LangVersion>
