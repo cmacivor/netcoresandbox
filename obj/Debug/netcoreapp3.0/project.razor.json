@@ -3277,104 +3277,6 @@
       },
       {
         "Kind": "Components.EventHandler",
-        "Name": "gotpointercapture",
-        "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the 'gotpointercapture' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
-        "TagOutputHint": null,
-        "TagMatchingRules": [
-          {
-            "TagName": "*",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [
-              {
-                "Name": "gotpointercapture",
-                "NameComparison": 0,
-                "Value": null,
-                "ValueComparison": 0,
-                "Diagnostics": []
-              }
-            ],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.EventHandler",
-            "Name": "gotpointercapture",
-            "TypeName": "System.String",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": "Sets the 'gotpointercapture' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
-            "Diagnostics": [],
-            "Metadata": {
-              "Components.IsWeaklyTyped": "True",
-              "Common.PropertyName": "gotpointercapture"
-            }
-          }
-        ],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Components.IsSpecialKind": "Components.EventHandler",
-          "Components.EventHandler.EventArgs": "Microsoft.AspNetCore.Components.UIPointerEventArgs",
-          "Common.ClassifyAttributesOnly": "True",
-          "Common.TypeName": "Microsoft.AspNetCore.Components.EventHandlers"
-        }
-      },
-      {
-        "Kind": "Components.EventHandler",
-        "Name": "lostpointercapture",
-        "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the 'lostpointercapture' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
-        "TagOutputHint": null,
-        "TagMatchingRules": [
-          {
-            "TagName": "*",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [
-              {
-                "Name": "lostpointercapture",
-                "NameComparison": 0,
-                "Value": null,
-                "ValueComparison": 0,
-                "Diagnostics": []
-              }
-            ],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.EventHandler",
-            "Name": "lostpointercapture",
-            "TypeName": "System.String",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": "Sets the 'lostpointercapture' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
-            "Diagnostics": [],
-            "Metadata": {
-              "Components.IsWeaklyTyped": "True",
-              "Common.PropertyName": "lostpointercapture"
-            }
-          }
-        ],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Components.IsSpecialKind": "Components.EventHandler",
-          "Components.EventHandler.EventArgs": "Microsoft.AspNetCore.Components.UIPointerEventArgs",
-          "Common.ClassifyAttributesOnly": "True",
-          "Common.TypeName": "Microsoft.AspNetCore.Components.EventHandlers"
-        }
-      },
-      {
-        "Kind": "Components.EventHandler",
         "Name": "onabort",
         "AssemblyName": "Microsoft.AspNetCore.Components",
         "Documentation": "Sets the 'onabort' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIProgressEventArgs'.",
@@ -5041,6 +4943,55 @@
       },
       {
         "Kind": "Components.EventHandler",
+        "Name": "ongotpointercapture",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Sets the 'ongotpointercapture' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "ongotpointercapture",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": []
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.EventHandler",
+            "Name": "ongotpointercapture",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "Sets the 'ongotpointercapture' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
+            "Diagnostics": [],
+            "Metadata": {
+              "Components.IsWeaklyTyped": "True",
+              "Common.PropertyName": "ongotpointercapture"
+            }
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Components.IsSpecialKind": "Components.EventHandler",
+          "Components.EventHandler.EventArgs": "Microsoft.AspNetCore.Components.UIPointerEventArgs",
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.EventHandlers"
+        }
+      },
+      {
+        "Kind": "Components.EventHandler",
         "Name": "oninput",
         "AssemblyName": "Microsoft.AspNetCore.Components",
         "Documentation": "Sets the 'oninput' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIChangeEventArgs'.",
@@ -5525,6 +5476,55 @@
           "Runtime.Name": "Components.None",
           "Components.IsSpecialKind": "Components.EventHandler",
           "Components.EventHandler.EventArgs": "Microsoft.AspNetCore.Components.UIProgressEventArgs",
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.EventHandlers"
+        }
+      },
+      {
+        "Kind": "Components.EventHandler",
+        "Name": "onlostpointercapture",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Sets the 'onlostpointercapture' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "onlostpointercapture",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": []
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.EventHandler",
+            "Name": "onlostpointercapture",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "Sets the 'onlostpointercapture' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
+            "Diagnostics": [],
+            "Metadata": {
+              "Components.IsWeaklyTyped": "True",
+              "Common.PropertyName": "onlostpointercapture"
+            }
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Components.IsSpecialKind": "Components.EventHandler",
+          "Components.EventHandler.EventArgs": "Microsoft.AspNetCore.Components.UIPointerEventArgs",
           "Common.ClassifyAttributesOnly": "True",
           "Common.TypeName": "Microsoft.AspNetCore.Components.EventHandlers"
         }
@@ -6021,6 +6021,202 @@
       },
       {
         "Kind": "Components.EventHandler",
+        "Name": "onpointercancel",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Sets the 'onpointercancel' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "onpointercancel",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": []
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.EventHandler",
+            "Name": "onpointercancel",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "Sets the 'onpointercancel' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
+            "Diagnostics": [],
+            "Metadata": {
+              "Components.IsWeaklyTyped": "True",
+              "Common.PropertyName": "onpointercancel"
+            }
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Components.IsSpecialKind": "Components.EventHandler",
+          "Components.EventHandler.EventArgs": "Microsoft.AspNetCore.Components.UIPointerEventArgs",
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.EventHandlers"
+        }
+      },
+      {
+        "Kind": "Components.EventHandler",
+        "Name": "onpointerdown",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Sets the 'onpointerdown' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "onpointerdown",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": []
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.EventHandler",
+            "Name": "onpointerdown",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "Sets the 'onpointerdown' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
+            "Diagnostics": [],
+            "Metadata": {
+              "Components.IsWeaklyTyped": "True",
+              "Common.PropertyName": "onpointerdown"
+            }
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Components.IsSpecialKind": "Components.EventHandler",
+          "Components.EventHandler.EventArgs": "Microsoft.AspNetCore.Components.UIPointerEventArgs",
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.EventHandlers"
+        }
+      },
+      {
+        "Kind": "Components.EventHandler",
+        "Name": "onpointerenter",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Sets the 'onpointerenter' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "onpointerenter",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": []
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.EventHandler",
+            "Name": "onpointerenter",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "Sets the 'onpointerenter' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
+            "Diagnostics": [],
+            "Metadata": {
+              "Components.IsWeaklyTyped": "True",
+              "Common.PropertyName": "onpointerenter"
+            }
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Components.IsSpecialKind": "Components.EventHandler",
+          "Components.EventHandler.EventArgs": "Microsoft.AspNetCore.Components.UIPointerEventArgs",
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.EventHandlers"
+        }
+      },
+      {
+        "Kind": "Components.EventHandler",
+        "Name": "onpointerleave",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Sets the 'onpointerleave' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "onpointerleave",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": []
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.EventHandler",
+            "Name": "onpointerleave",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "Sets the 'onpointerleave' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
+            "Diagnostics": [],
+            "Metadata": {
+              "Components.IsWeaklyTyped": "True",
+              "Common.PropertyName": "onpointerleave"
+            }
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Components.IsSpecialKind": "Components.EventHandler",
+          "Components.EventHandler.EventArgs": "Microsoft.AspNetCore.Components.UIPointerEventArgs",
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.EventHandlers"
+        }
+      },
+      {
+        "Kind": "Components.EventHandler",
         "Name": "onpointerlockchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
         "Documentation": "Sets the 'onpointerlockchange' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIEventArgs'.",
@@ -6113,6 +6309,202 @@
           "Runtime.Name": "Components.None",
           "Components.IsSpecialKind": "Components.EventHandler",
           "Components.EventHandler.EventArgs": "Microsoft.AspNetCore.Components.UIEventArgs",
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.EventHandlers"
+        }
+      },
+      {
+        "Kind": "Components.EventHandler",
+        "Name": "onpointermove",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Sets the 'onpointermove' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "onpointermove",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": []
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.EventHandler",
+            "Name": "onpointermove",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "Sets the 'onpointermove' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
+            "Diagnostics": [],
+            "Metadata": {
+              "Components.IsWeaklyTyped": "True",
+              "Common.PropertyName": "onpointermove"
+            }
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Components.IsSpecialKind": "Components.EventHandler",
+          "Components.EventHandler.EventArgs": "Microsoft.AspNetCore.Components.UIPointerEventArgs",
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.EventHandlers"
+        }
+      },
+      {
+        "Kind": "Components.EventHandler",
+        "Name": "onpointerout",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Sets the 'onpointerout' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "onpointerout",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": []
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.EventHandler",
+            "Name": "onpointerout",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "Sets the 'onpointerout' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
+            "Diagnostics": [],
+            "Metadata": {
+              "Components.IsWeaklyTyped": "True",
+              "Common.PropertyName": "onpointerout"
+            }
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Components.IsSpecialKind": "Components.EventHandler",
+          "Components.EventHandler.EventArgs": "Microsoft.AspNetCore.Components.UIPointerEventArgs",
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.EventHandlers"
+        }
+      },
+      {
+        "Kind": "Components.EventHandler",
+        "Name": "onpointerover",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Sets the 'onpointerover' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "onpointerover",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": []
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.EventHandler",
+            "Name": "onpointerover",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "Sets the 'onpointerover' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
+            "Diagnostics": [],
+            "Metadata": {
+              "Components.IsWeaklyTyped": "True",
+              "Common.PropertyName": "onpointerover"
+            }
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Components.IsSpecialKind": "Components.EventHandler",
+          "Components.EventHandler.EventArgs": "Microsoft.AspNetCore.Components.UIPointerEventArgs",
+          "Common.ClassifyAttributesOnly": "True",
+          "Common.TypeName": "Microsoft.AspNetCore.Components.EventHandlers"
+        }
+      },
+      {
+        "Kind": "Components.EventHandler",
+        "Name": "onpointerup",
+        "AssemblyName": "Microsoft.AspNetCore.Components",
+        "Documentation": "Sets the 'onpointerup' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
+        "TagOutputHint": null,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "onpointerup",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": []
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.EventHandler",
+            "Name": "onpointerup",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "Sets the 'onpointerup' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
+            "Diagnostics": [],
+            "Metadata": {
+              "Components.IsWeaklyTyped": "True",
+              "Common.PropertyName": "onpointerup"
+            }
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Components.IsSpecialKind": "Components.EventHandler",
+          "Components.EventHandler.EventArgs": "Microsoft.AspNetCore.Components.UIPointerEventArgs",
           "Common.ClassifyAttributesOnly": "True",
           "Common.TypeName": "Microsoft.AspNetCore.Components.EventHandlers"
         }
@@ -7338,398 +7730,6 @@
           "Runtime.Name": "Components.None",
           "Components.IsSpecialKind": "Components.EventHandler",
           "Components.EventHandler.EventArgs": "Microsoft.AspNetCore.Components.UIWheelEventArgs",
-          "Common.ClassifyAttributesOnly": "True",
-          "Common.TypeName": "Microsoft.AspNetCore.Components.EventHandlers"
-        }
-      },
-      {
-        "Kind": "Components.EventHandler",
-        "Name": "pointercancel",
-        "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the 'pointercancel' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
-        "TagOutputHint": null,
-        "TagMatchingRules": [
-          {
-            "TagName": "*",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [
-              {
-                "Name": "pointercancel",
-                "NameComparison": 0,
-                "Value": null,
-                "ValueComparison": 0,
-                "Diagnostics": []
-              }
-            ],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.EventHandler",
-            "Name": "pointercancel",
-            "TypeName": "System.String",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": "Sets the 'pointercancel' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
-            "Diagnostics": [],
-            "Metadata": {
-              "Components.IsWeaklyTyped": "True",
-              "Common.PropertyName": "pointercancel"
-            }
-          }
-        ],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Components.IsSpecialKind": "Components.EventHandler",
-          "Components.EventHandler.EventArgs": "Microsoft.AspNetCore.Components.UIPointerEventArgs",
-          "Common.ClassifyAttributesOnly": "True",
-          "Common.TypeName": "Microsoft.AspNetCore.Components.EventHandlers"
-        }
-      },
-      {
-        "Kind": "Components.EventHandler",
-        "Name": "pointerdown",
-        "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the 'pointerdown' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
-        "TagOutputHint": null,
-        "TagMatchingRules": [
-          {
-            "TagName": "*",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [
-              {
-                "Name": "pointerdown",
-                "NameComparison": 0,
-                "Value": null,
-                "ValueComparison": 0,
-                "Diagnostics": []
-              }
-            ],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.EventHandler",
-            "Name": "pointerdown",
-            "TypeName": "System.String",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": "Sets the 'pointerdown' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
-            "Diagnostics": [],
-            "Metadata": {
-              "Components.IsWeaklyTyped": "True",
-              "Common.PropertyName": "pointerdown"
-            }
-          }
-        ],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Components.IsSpecialKind": "Components.EventHandler",
-          "Components.EventHandler.EventArgs": "Microsoft.AspNetCore.Components.UIPointerEventArgs",
-          "Common.ClassifyAttributesOnly": "True",
-          "Common.TypeName": "Microsoft.AspNetCore.Components.EventHandlers"
-        }
-      },
-      {
-        "Kind": "Components.EventHandler",
-        "Name": "pointerenter",
-        "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the 'pointerenter' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
-        "TagOutputHint": null,
-        "TagMatchingRules": [
-          {
-            "TagName": "*",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [
-              {
-                "Name": "pointerenter",
-                "NameComparison": 0,
-                "Value": null,
-                "ValueComparison": 0,
-                "Diagnostics": []
-              }
-            ],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.EventHandler",
-            "Name": "pointerenter",
-            "TypeName": "System.String",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": "Sets the 'pointerenter' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
-            "Diagnostics": [],
-            "Metadata": {
-              "Components.IsWeaklyTyped": "True",
-              "Common.PropertyName": "pointerenter"
-            }
-          }
-        ],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Components.IsSpecialKind": "Components.EventHandler",
-          "Components.EventHandler.EventArgs": "Microsoft.AspNetCore.Components.UIPointerEventArgs",
-          "Common.ClassifyAttributesOnly": "True",
-          "Common.TypeName": "Microsoft.AspNetCore.Components.EventHandlers"
-        }
-      },
-      {
-        "Kind": "Components.EventHandler",
-        "Name": "pointerleave",
-        "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the 'pointerleave' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
-        "TagOutputHint": null,
-        "TagMatchingRules": [
-          {
-            "TagName": "*",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [
-              {
-                "Name": "pointerleave",
-                "NameComparison": 0,
-                "Value": null,
-                "ValueComparison": 0,
-                "Diagnostics": []
-              }
-            ],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.EventHandler",
-            "Name": "pointerleave",
-            "TypeName": "System.String",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": "Sets the 'pointerleave' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
-            "Diagnostics": [],
-            "Metadata": {
-              "Components.IsWeaklyTyped": "True",
-              "Common.PropertyName": "pointerleave"
-            }
-          }
-        ],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Components.IsSpecialKind": "Components.EventHandler",
-          "Components.EventHandler.EventArgs": "Microsoft.AspNetCore.Components.UIPointerEventArgs",
-          "Common.ClassifyAttributesOnly": "True",
-          "Common.TypeName": "Microsoft.AspNetCore.Components.EventHandlers"
-        }
-      },
-      {
-        "Kind": "Components.EventHandler",
-        "Name": "pointermove",
-        "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the 'pointermove' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
-        "TagOutputHint": null,
-        "TagMatchingRules": [
-          {
-            "TagName": "*",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [
-              {
-                "Name": "pointermove",
-                "NameComparison": 0,
-                "Value": null,
-                "ValueComparison": 0,
-                "Diagnostics": []
-              }
-            ],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.EventHandler",
-            "Name": "pointermove",
-            "TypeName": "System.String",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": "Sets the 'pointermove' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
-            "Diagnostics": [],
-            "Metadata": {
-              "Components.IsWeaklyTyped": "True",
-              "Common.PropertyName": "pointermove"
-            }
-          }
-        ],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Components.IsSpecialKind": "Components.EventHandler",
-          "Components.EventHandler.EventArgs": "Microsoft.AspNetCore.Components.UIPointerEventArgs",
-          "Common.ClassifyAttributesOnly": "True",
-          "Common.TypeName": "Microsoft.AspNetCore.Components.EventHandlers"
-        }
-      },
-      {
-        "Kind": "Components.EventHandler",
-        "Name": "pointerout",
-        "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the 'pointerout' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
-        "TagOutputHint": null,
-        "TagMatchingRules": [
-          {
-            "TagName": "*",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [
-              {
-                "Name": "pointerout",
-                "NameComparison": 0,
-                "Value": null,
-                "ValueComparison": 0,
-                "Diagnostics": []
-              }
-            ],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.EventHandler",
-            "Name": "pointerout",
-            "TypeName": "System.String",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": "Sets the 'pointerout' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
-            "Diagnostics": [],
-            "Metadata": {
-              "Components.IsWeaklyTyped": "True",
-              "Common.PropertyName": "pointerout"
-            }
-          }
-        ],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Components.IsSpecialKind": "Components.EventHandler",
-          "Components.EventHandler.EventArgs": "Microsoft.AspNetCore.Components.UIPointerEventArgs",
-          "Common.ClassifyAttributesOnly": "True",
-          "Common.TypeName": "Microsoft.AspNetCore.Components.EventHandlers"
-        }
-      },
-      {
-        "Kind": "Components.EventHandler",
-        "Name": "pointerover",
-        "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the 'pointerover' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
-        "TagOutputHint": null,
-        "TagMatchingRules": [
-          {
-            "TagName": "*",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [
-              {
-                "Name": "pointerover",
-                "NameComparison": 0,
-                "Value": null,
-                "ValueComparison": 0,
-                "Diagnostics": []
-              }
-            ],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.EventHandler",
-            "Name": "pointerover",
-            "TypeName": "System.String",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": "Sets the 'pointerover' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
-            "Diagnostics": [],
-            "Metadata": {
-              "Components.IsWeaklyTyped": "True",
-              "Common.PropertyName": "pointerover"
-            }
-          }
-        ],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Components.IsSpecialKind": "Components.EventHandler",
-          "Components.EventHandler.EventArgs": "Microsoft.AspNetCore.Components.UIPointerEventArgs",
-          "Common.ClassifyAttributesOnly": "True",
-          "Common.TypeName": "Microsoft.AspNetCore.Components.EventHandlers"
-        }
-      },
-      {
-        "Kind": "Components.EventHandler",
-        "Name": "pointerup",
-        "AssemblyName": "Microsoft.AspNetCore.Components",
-        "Documentation": "Sets the 'pointerup' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
-        "TagOutputHint": null,
-        "TagMatchingRules": [
-          {
-            "TagName": "*",
-            "ParentTag": null,
-            "TagStructure": 0,
-            "Attributes": [
-              {
-                "Name": "pointerup",
-                "NameComparison": 0,
-                "Value": null,
-                "ValueComparison": 0,
-                "Diagnostics": []
-              }
-            ],
-            "Diagnostics": []
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.EventHandler",
-            "Name": "pointerup",
-            "TypeName": "System.String",
-            "IsEnum": false,
-            "IndexerNamePrefix": null,
-            "IndexerTypeName": null,
-            "Documentation": "Sets the 'pointerup' attribute to the provided string or delegate value. A delegate value should be of type 'Microsoft.AspNetCore.Components.UIPointerEventArgs'.",
-            "Diagnostics": [],
-            "Metadata": {
-              "Components.IsWeaklyTyped": "True",
-              "Common.PropertyName": "pointerup"
-            }
-          }
-        ],
-        "AllowedChildTags": [],
-        "Diagnostics": [],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Components.IsSpecialKind": "Components.EventHandler",
-          "Components.EventHandler.EventArgs": "Microsoft.AspNetCore.Components.UIPointerEventArgs",
           "Common.ClassifyAttributesOnly": "True",
           "Common.TypeName": "Microsoft.AspNetCore.Components.EventHandlers"
         }
@@ -10483,6 +10483,11 @@
       "FilePath": "_Imports.razor",
       "TargetPath": "_Imports.razor",
       "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "Pages\\_Host.cshtml",
+      "TargetPath": "Pages\\_Host.cshtml",
+      "FileKind": "mvc"
     },
     {
       "FilePath": "Shared\\MainLayout.razor",
