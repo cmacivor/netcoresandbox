@@ -24,7 +24,6 @@
     ".NETCoreApp,Version=v3.0": {
       "BlazorDemo/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.App.Runtime.win-x64": "3.0.0-preview5-19227-01",
           "Microsoft.NETCore.Platforms": "3.0.0-preview5.19224.8",
           "Newtonsoft.Json": "12.0.2",
           "System.Runtime.Serialization.Json": "4.3.0",
@@ -33,10 +32,6 @@
           "System.ServiceModel.Http": "4.4.4",
           "System.ServiceModel.NetTcp": "4.4.4",
           "System.ServiceModel.Security": "4.4.4",
-          "runtime.win-x64.Microsoft.NETCore.App": "3.0.0-preview5-27626-15",
-          "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy": "3.0.0-preview5-27626-15",
-          "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview5-27626-15",
-          "runtime.win-x64.Microsoft.WindowsDesktop.App": "3.0.0-preview5-27626-15",
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.0.0.0",
@@ -323,13 +318,6 @@
           "BlazorDemo.dll": {}
         }
       },
-      "Microsoft.AspNetCore.App.Runtime.win-x64/3.0.0-preview5-19227-01": {},
-      "Microsoft.NETCore.DotNetAppHost/3.0.0-preview5-27626-15": {},
-      "Microsoft.NETCore.DotNetHostResolver/3.0.0-preview5-27626-15": {
-        "dependencies": {
-          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview5-27626-15"
-        }
-      },
       "Microsoft.NETCore.Platforms/3.0.0-preview5.19224.8": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
       "Newtonsoft.Json/12.0.2": {
@@ -343,18 +331,6 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "runtime.win-x64.Microsoft.NETCore.App/3.0.0-preview5-27626-15": {},
-      "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview5-27626-15": {
-        "dependencies": {
-          "Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview5-27626-15"
-        }
-      },
-      "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview5-27626-15": {
-        "dependencies": {
-          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview5-27626-15"
-        }
-      },
-      "runtime.win-x64.Microsoft.WindowsDesktop.App/3.0.0-preview5-27626-15": {},
       "System.Collections/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.0.0-preview5.19224.8",
@@ -2483,27 +2459,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.App.Runtime.win-x64/3.0.0-preview5-19227-01": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Qnp4UA7b/yjeUFJtGLXMbh6P9PHOcMgfOmDFjRraKc5P2JXLi0sZyNOQo5ECNiy8OhsZaGCL6Bp3f8QxqxUsOw==",
-      "path": "microsoft.aspnetcore.app.runtime.win-x64/3.0.0-preview5-19227-01",
-      "hashPath": "microsoft.aspnetcore.app.runtime.win-x64.3.0.0-preview5-19227-01.nupkg.sha512"
-    },
-    "Microsoft.NETCore.DotNetAppHost/3.0.0-preview5-27626-15": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-FEpRjeM6SXYDgllcSPY99OqZlc39L95vNmw9D1ny1u347pf/RY3xH4whQa6KnT/wgy0VMFxY8v09wa3LRBcRAw==",
-      "path": "microsoft.netcore.dotnetapphost/3.0.0-preview5-27626-15",
-      "hashPath": "microsoft.netcore.dotnetapphost.3.0.0-preview5-27626-15.nupkg.sha512"
-    },
-    "Microsoft.NETCore.DotNetHostResolver/3.0.0-preview5-27626-15": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-FUfVDBjdwGPj2EJGAXLcB1n7pQvpE/kcPogDXXBSbYU6NH+VOFViWjK+h5AscmCd3sm7uLYN/MJKI1sxO1L31g==",
-      "path": "microsoft.netcore.dotnethostresolver/3.0.0-preview5-27626-15",
-      "hashPath": "microsoft.netcore.dotnethostresolver.3.0.0-preview5-27626-15.nupkg.sha512"
-    },
     "Microsoft.NETCore.Platforms/3.0.0-preview5.19224.8": {
       "type": "package",
       "serviceable": true,
@@ -2524,34 +2479,6 @@
       "sha512": "sha512-rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
       "path": "newtonsoft.json/12.0.2",
       "hashPath": "newtonsoft.json.12.0.2.nupkg.sha512"
-    },
-    "runtime.win-x64.Microsoft.NETCore.App/3.0.0-preview5-27626-15": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-v9MxGNmx5UfQBqLERgtGuopDfeH+9AnR7m6oAyLMlmqQfNI0ddByjxTU6sOeX23eeXmNDR8j0EX/nhVLiS5cvg==",
-      "path": "runtime.win-x64.microsoft.netcore.app/3.0.0-preview5-27626-15",
-      "hashPath": "runtime.win-x64.microsoft.netcore.app.3.0.0-preview5-27626-15.nupkg.sha512"
-    },
-    "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview5-27626-15": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-wTtiKcoVsHBZ3snB2g1xPunQX8pL3DAex3OvKwVDxgzATvVBnYx4ePu6quSRZxaOkptAEWp7rIYgKT4aJESHxQ==",
-      "path": "runtime.win-x64.microsoft.netcore.dotnethostpolicy/3.0.0-preview5-27626-15",
-      "hashPath": "runtime.win-x64.microsoft.netcore.dotnethostpolicy.3.0.0-preview5-27626-15.nupkg.sha512"
-    },
-    "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview5-27626-15": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-TFWVWCo3h18DFsBFyvi82AynpUN3Szh64HVrFi5mESUdHcQyE5JfB+OhPvwe4zGVzlJ1N2gLnFmFIwbJTyXQSw==",
-      "path": "runtime.win-x64.microsoft.netcore.dotnethostresolver/3.0.0-preview5-27626-15",
-      "hashPath": "runtime.win-x64.microsoft.netcore.dotnethostresolver.3.0.0-preview5-27626-15.nupkg.sha512"
-    },
-    "runtime.win-x64.Microsoft.WindowsDesktop.App/3.0.0-preview5-27626-15": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-rg4FzB0QnUw/HWB1lnYo3h8aDtpKEQrQ7fzFbOZ+Vy/RpnGxVknIyih3EAuyOTupqfCDWSTS8fcq3TMNQXotqA==",
-      "path": "runtime.win-x64.microsoft.windowsdesktop.app/3.0.0-preview5-27626-15",
-      "hashPath": "runtime.win-x64.microsoft.windowsdesktop.app.3.0.0-preview5-27626-15.nupkg.sha512"
     },
     "System.Collections/4.3.0": {
       "type": "package",

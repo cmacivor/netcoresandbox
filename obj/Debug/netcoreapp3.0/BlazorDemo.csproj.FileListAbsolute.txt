@@ -62,3 +62,4 @@ C:\Users\macivoce\BlazorDemo\obj\Debug\netcoreapp3.0\BlazorDemo.Views.pdb
 C:\Users\macivoce\BlazorDemo\obj\Debug\netcoreapp3.0\BlazorDemo.csproj.CopyComplete
 C:\Users\macivoce\BlazorDemo\obj\Debug\netcoreapp3.0\BlazorDemo.dll
 C:\Users\macivoce\BlazorDemo\obj\Debug\netcoreapp3.0\BlazorDemo.pdb
+c:\Users\macivoce\BlazorDemo\obj\Debug\netcoreapp3.0\BlazorDemo.csprojAssemblyReference.cache

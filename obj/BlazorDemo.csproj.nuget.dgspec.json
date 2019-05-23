@@ -86,10 +86,37 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[3.0.0-preview5-19227-01, 3.0.0-preview5-19227-01]"
+            },
+            {
+              "name": "runtime.win-x64.Microsoft.NETCore.App",
+              "version": "[3.0.0-preview5-27626-15, 3.0.0-preview5-27626-15]"
+            },
+            {
+              "name": "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy",
+              "version": "[3.0.0-preview5-27626-15, 3.0.0-preview5-27626-15]"
+            },
+            {
+              "name": "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver",
+              "version": "[3.0.0-preview5-27626-15, 3.0.0-preview5-27626-15]"
+            },
+            {
+              "name": "runtime.win-x64.Microsoft.WindowsDesktop.App",
+              "version": "[3.0.0-preview5-27626-15, 3.0.0-preview5-27626-15]"
+            }
+          ],
           "frameworkReferences": [
             "Microsoft.AspNetCore.App",
             "Microsoft.NETCore.App"
           ]
+        }
+      },
+      "runtimes": {
+        "win10-x64": {
+          "#import": []
         }
       }
     }
