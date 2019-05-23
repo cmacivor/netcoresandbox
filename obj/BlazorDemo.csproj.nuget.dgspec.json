@@ -46,13 +46,6 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
-            "Microsoft.AspNetCore.App.Runtime.win-x64": {
-              "include": "None",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.0.0-preview5-19227-01, )",
-              "autoReferenced": true
-            },
             "Microsoft.NETCore.Platforms": {
               "suppressParent": "All",
               "target": "Package",
@@ -86,34 +79,6 @@
             "System.ServiceModel.Security": {
               "target": "Package",
               "version": "[4.4.*, )"
-            },
-            "runtime.win-x64.Microsoft.NETCore.App": {
-              "include": "None",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.0.0-preview5-27626-15, )",
-              "autoReferenced": true
-            },
-            "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy": {
-              "include": "None",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.0.0-preview5-27626-15, )",
-              "autoReferenced": true
-            },
-            "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver": {
-              "include": "None",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.0.0-preview5-27626-15, )",
-              "autoReferenced": true
-            },
-            "runtime.win-x64.Microsoft.WindowsDesktop.App": {
-              "include": "None",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.0.0-preview5-27626-15, )",
-              "autoReferenced": true
             }
           },
           "imports": [
@@ -125,11 +90,6 @@
             "Microsoft.AspNetCore.App",
             "Microsoft.NETCore.App"
           ]
-        }
-      },
-      "runtimes": {
-        "win10-x64": {
-          "#import": []
         }
       }
     }
