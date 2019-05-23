@@ -25,6 +25,14 @@ namespace BlazorDemo
             services.AddSingleton<OffenseService>();
             services.AddSingleton<BingMapService>();
             services.AddSingleton<RegistrationService>();
+
+
+            //per this documentation, https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/iis/?view=aspnetcore-3.0, set the HttpContext.User by Windows Authentication
+            //Update: HttpContext isn't availble in Blazor, so this doesn't apply
+            //services.Configure<IISServerOptions>(options =>
+            //{
+            //    options.AutomaticAuthentication = true;
+            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

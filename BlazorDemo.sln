@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorDemo", "BlazorDemo.csproj", "{DB897DE4-C7BE-409E-88AC-D05FE0C026FF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{CE2D4A6B-1370-43F9-A373-0E20A676CB75}"
+	ProjectSection(SolutionItems) = preProject
+		Publish-BlazorDemo.ps1 = Publish-BlazorDemo.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

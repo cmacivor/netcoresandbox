@@ -18,12 +18,17 @@ namespace BlazorDemo
             CreateHostBuilder(args).Build().Run();
         }
 
+        /// <summary>
+        /// sets up the host. See https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/iis/?view=aspnetcore-3.0
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                    
+                    //webBuilder.UseIIS(); //uses the In-process hosting model
                 });
     }
 }

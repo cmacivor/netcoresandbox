@@ -1,0 +1,29 @@
+﻿{
+  "ProviderId": "Microsoft.VisualStudio.ConnectedService.Wcf",
+  "Version": "15.0.30311.775",
+  "GettingStartedDocument": {
+    "Uri": "https://go.microsoft.com/fwlink/?linkid=858517"
+  },
+  "ExtendedData": {
+    "inputs": [
+      "http://starappdev2.richva.ci.richmond.va.us/services/noneya/NoneyaWebService.svc"
+    ],
+    "collectionTypes": [
+      "System.Collections.Generic.Dictionary`2",
+      "System.Collections.Generic.List`1"
+    ],
+    "namespaceMappings": [
+      "*, ServiceReference1"
+    ],
+    "references": [
+      "System.IO, {System.IO, 4.3.0}",
+      "System.Runtime, {System.Runtime, 4.3.0}",
+      "System.Runtime.Serialization.Json, {System.Runtime.Serialization.Json, 4.3.0}",
+      "System.Runtime.Serialization.Primitives, {System.Runtime.Serialization.Primitives, 4.3.0}",
+      "System.Text.Encoding, {System.Text.Encoding, 4.3.0}",
+      "System.Threading.Tasks, {System.Threading.Tasks, 4.3.0}"
+    ],
+    "targetFramework": "netcoreapp3.0",
+    "typeReuseMode": "All"
+  }
+}

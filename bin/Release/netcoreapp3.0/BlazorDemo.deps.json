@@ -24,10 +24,19 @@
     ".NETCoreApp,Version=v3.0": {
       "BlazorDemo/1.0.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19212.13",
+          "Microsoft.AspNetCore.App.Runtime.win-x64": "3.0.0-preview5-19227-01",
+          "Microsoft.NETCore.Platforms": "3.0.0-preview5.19224.8",
+          "Newtonsoft.Json": "12.0.2",
           "System.Runtime.Serialization.Json": "4.3.0",
           "System.Runtime.Serialization.Primitives": "4.3.0",
-          "runtime.win-x64.Microsoft.NETCore.DotNetAppHost": "3.0.0-preview4-27615-11",
+          "System.ServiceModel.Duplex": "4.4.4",
+          "System.ServiceModel.Http": "4.4.4",
+          "System.ServiceModel.NetTcp": "4.4.4",
+          "System.ServiceModel.Security": "4.4.4",
+          "runtime.win-x64.Microsoft.NETCore.App": "3.0.0-preview5-27626-15",
+          "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy": "3.0.0-preview5-27626-15",
+          "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview5-27626-15",
+          "runtime.win-x64.Microsoft.WindowsDesktop.App": "3.0.0-preview5-27626-15",
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.0.0.0",
@@ -100,7 +109,7 @@
           "Microsoft.AspNetCore.SignalR.Common": "3.0.0.0",
           "Microsoft.AspNetCore.SignalR.Core": "3.0.0.0",
           "Microsoft.AspNetCore.SignalR": "3.0.0.0",
-          "Microsoft.AspNetCore.SignalR.Protocols.NewtonsoftJson": "3.0.0.0",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "3.0.0.0",
           "Microsoft.AspNetCore.StaticFiles": "3.0.0.0",
           "Microsoft.AspNetCore.WebSockets": "3.0.0.0",
           "Microsoft.AspNetCore.WebUtilities": "3.0.0.0",
@@ -156,7 +165,6 @@
           "Microsoft.Win32.Registry": "4.1.2.0",
           "mscorlib": "4.0.0.0",
           "netstandard": "2.1.0.0",
-          "Newtonsoft.Json": "12.0.0.0",
           "System.AppContext": "4.2.1.0",
           "System.Buffers": "4.0.2.0",
           "System.Collections.Concurrent.Reference": "4.0.14.0",
@@ -232,7 +240,7 @@
           "System.Numerics": "4.0.0.0",
           "System.Numerics.Vectors": "4.1.3.0",
           "System.ObjectModel": "4.1.1.0",
-          "System.Reflection.DispatchProxy": "4.0.5.0",
+          "System.Reflection.DispatchProxy.Reference": "4.0.5.0",
           "System.Reflection.Reference": "4.2.1.0",
           "System.Reflection.Emit.Reference": "4.1.1.0",
           "System.Reflection.Emit.ILGeneration.Reference": "4.0.3.0",
@@ -272,7 +280,7 @@
           "System.Security": "4.0.0.0",
           "System.Security.Permissions": "4.0.2.0",
           "System.Security.Principal": "4.1.1.0",
-          "System.Security.Principal.Windows": "4.1.1.0",
+          "System.Security.Principal.Windows.Reference": "4.1.1.0",
           "System.Security.SecureString": "4.1.1.0",
           "System.ServiceModel.Web": "4.0.0.0",
           "System.ServiceProcess": "4.0.0.0",
@@ -315,12 +323,41 @@
           "BlazorDemo.dll": {}
         }
       },
-      "Microsoft.NETCore.Platforms/3.0.0-preview4.19212.13": {},
+      "Microsoft.AspNetCore.App.Runtime.win-x64/3.0.0-preview5-19227-01": {},
+      "Microsoft.NETCore.DotNetAppHost/3.0.0-preview5-27626-15": {},
+      "Microsoft.NETCore.DotNetHostResolver/3.0.0-preview5-27626-15": {
+        "dependencies": {
+          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview5-27626-15"
+        }
+      },
+      "Microsoft.NETCore.Platforms/3.0.0-preview5.19224.8": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
-      "runtime.win-x64.Microsoft.NETCore.DotNetAppHost/3.0.0-preview4-27615-11": {},
+      "Newtonsoft.Json/12.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.2.23222"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "runtime.win-x64.Microsoft.NETCore.App/3.0.0-preview5-27626-15": {},
+      "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview5-27626-15": {
+        "dependencies": {
+          "Microsoft.NETCore.DotNetHostResolver": "3.0.0-preview5-27626-15"
+        }
+      },
+      "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview5-27626-15": {
+        "dependencies": {
+          "Microsoft.NETCore.DotNetAppHost": "3.0.0-preview5-27626-15"
+        }
+      },
+      "runtime.win-x64.Microsoft.WindowsDesktop.App/3.0.0-preview5-27626-15": {},
       "System.Collections/4.3.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19212.13",
+          "Microsoft.NETCore.Platforms": "3.0.0-preview5.19224.8",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
         }
@@ -341,35 +378,35 @@
       },
       "System.Diagnostics.Debug/4.3.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19212.13",
+          "Microsoft.NETCore.Platforms": "3.0.0-preview5.19224.8",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
         }
       },
       "System.Diagnostics.Tools/4.3.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19212.13",
+          "Microsoft.NETCore.Platforms": "3.0.0-preview5.19224.8",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
         }
       },
       "System.Diagnostics.Tracing/4.3.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19212.13",
+          "Microsoft.NETCore.Platforms": "3.0.0-preview5.19224.8",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
         }
       },
       "System.Globalization/4.3.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19212.13",
+          "Microsoft.NETCore.Platforms": "3.0.0-preview5.19224.8",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
         }
       },
       "System.IO/4.3.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19212.13",
+          "Microsoft.NETCore.Platforms": "3.0.0-preview5.19224.8",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0",
           "System.Text.Encoding": "4.3.0",
@@ -378,7 +415,7 @@
       },
       "System.IO.FileSystem/4.3.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19212.13",
+          "Microsoft.NETCore.Platforms": "3.0.0-preview5.19224.8",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.IO": "4.3.0",
           "System.IO.FileSystem.Primitives": "4.3.0",
@@ -400,6 +437,22 @@
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0"
+        }
+      },
+      "System.Net.Http.WinHttpHandler/4.4.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Net.Http.WinHttpHandler.dll": {
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.6.25519.3"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/System.Net.Http.WinHttpHandler.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.6.25519.3"
+          }
         }
       },
       "System.Private.DataContractSerialization/4.3.0": {
@@ -431,15 +484,38 @@
           "System.Xml.XmlSerializer": "4.3.0"
         }
       },
+      "System.Private.ServiceModel/4.4.4": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.0.0-preview5.19224.8",
+          "System.Net.Http.WinHttpHandler": "4.4.0",
+          "System.Reflection.DispatchProxy": "4.4.0",
+          "System.Security.Principal.Windows": "4.4.0"
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard2.0/System.Private.ServiceModel.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.1.2.4",
+            "fileVersion": "4.6.26720.1"
+          },
+          "runtimes/win7/lib/netstandard2.0/System.Private.ServiceModel.dll": {
+            "rid": "win7",
+            "assetType": "runtime",
+            "assemblyVersion": "4.1.2.4",
+            "fileVersion": "4.6.26720.1"
+          }
+        }
+      },
       "System.Reflection/4.3.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19212.13",
+          "Microsoft.NETCore.Platforms": "3.0.0-preview5.19224.8",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.IO": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
           "System.Runtime": "4.3.0"
         }
       },
+      "System.Reflection.DispatchProxy/4.4.0": {},
       "System.Reflection.Emit/4.3.0": {
         "dependencies": {
           "System.IO": "4.3.0",
@@ -466,7 +542,7 @@
       },
       "System.Reflection.Extensions/4.3.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19212.13",
+          "Microsoft.NETCore.Platforms": "3.0.0-preview5.19224.8",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Reflection": "4.3.0",
           "System.Runtime": "4.3.0"
@@ -474,7 +550,7 @@
       },
       "System.Reflection.Primitives/4.3.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19212.13",
+          "Microsoft.NETCore.Platforms": "3.0.0-preview5.19224.8",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
         }
@@ -487,7 +563,7 @@
       },
       "System.Resources.ResourceManager/4.3.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19212.13",
+          "Microsoft.NETCore.Platforms": "3.0.0-preview5.19224.8",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Globalization": "4.3.0",
           "System.Reflection": "4.3.0",
@@ -496,27 +572,27 @@
       },
       "System.Runtime/4.3.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19212.13",
+          "Microsoft.NETCore.Platforms": "3.0.0-preview5.19224.8",
           "Microsoft.NETCore.Targets": "1.1.0"
         }
       },
       "System.Runtime.Extensions/4.3.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19212.13",
+          "Microsoft.NETCore.Platforms": "3.0.0-preview5.19224.8",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
         }
       },
       "System.Runtime.Handles/4.3.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19212.13",
+          "Microsoft.NETCore.Platforms": "3.0.0-preview5.19224.8",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
         }
       },
       "System.Runtime.InteropServices/4.3.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19212.13",
+          "Microsoft.NETCore.Platforms": "3.0.0-preview5.19224.8",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Reflection": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
@@ -537,16 +613,100 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.Security.Principal.Windows/4.4.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.0.0-preview5.19224.8"
+        }
+      },
+      "System.ServiceModel.Duplex/4.4.4": {
+        "dependencies": {
+          "System.Private.ServiceModel": "4.4.4",
+          "System.ServiceModel.Primitives": "4.4.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.ServiceModel.Duplex.dll": {
+            "assemblyVersion": "4.1.0.3",
+            "fileVersion": "4.6.26720.1"
+          }
+        },
+        "compile": {
+          "ref/netstandard2.0/System.ServiceModel.Duplex.dll": {}
+        }
+      },
+      "System.ServiceModel.Http/4.4.4": {
+        "dependencies": {
+          "System.Private.ServiceModel": "4.4.4",
+          "System.ServiceModel.Primitives": "4.4.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.ServiceModel.Http.dll": {
+            "assemblyVersion": "4.1.2.3",
+            "fileVersion": "4.6.26720.1"
+          }
+        },
+        "compile": {
+          "ref/netstandard2.0/System.ServiceModel.Http.dll": {}
+        }
+      },
+      "System.ServiceModel.NetTcp/4.4.4": {
+        "dependencies": {
+          "System.Private.ServiceModel": "4.4.4",
+          "System.ServiceModel.Primitives": "4.4.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.ServiceModel.NetTcp.dll": {
+            "assemblyVersion": "4.1.2.3",
+            "fileVersion": "4.6.26720.1"
+          }
+        },
+        "compile": {
+          "ref/netstandard2.0/System.ServiceModel.NetTcp.dll": {}
+        }
+      },
+      "System.ServiceModel.Primitives/4.4.4": {
+        "dependencies": {
+          "System.Private.ServiceModel": "4.4.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.ServiceModel.Primitives.dll": {
+            "assemblyVersion": "4.2.0.3",
+            "fileVersion": "4.6.26720.1"
+          },
+          "lib/netstandard2.0/System.ServiceModel.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "0.0.65535.65535"
+          }
+        },
+        "compile": {
+          "ref/netstandard2.0/System.ServiceModel.Primitives.dll": {},
+          "ref/netstandard2.0/System.ServiceModel.dll": {}
+        }
+      },
+      "System.ServiceModel.Security/4.4.4": {
+        "dependencies": {
+          "System.Private.ServiceModel": "4.4.4",
+          "System.ServiceModel.Primitives": "4.4.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.ServiceModel.Security.dll": {
+            "assemblyVersion": "4.0.3.3",
+            "fileVersion": "4.6.26720.1"
+          }
+        },
+        "compile": {
+          "ref/netstandard2.0/System.ServiceModel.Security.dll": {}
+        }
+      },
       "System.Text.Encoding/4.3.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19212.13",
+          "Microsoft.NETCore.Platforms": "3.0.0-preview5.19224.8",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
         }
       },
       "System.Text.Encoding.Extensions/4.3.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19212.13",
+          "Microsoft.NETCore.Platforms": "3.0.0-preview5.19224.8",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0",
           "System.Text.Encoding": "4.3.0"
@@ -565,7 +725,7 @@
       },
       "System.Threading.Tasks/4.3.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0-preview4.19212.13",
+          "Microsoft.NETCore.Platforms": "3.0.0-preview5.19224.8",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
         }
@@ -1079,9 +1239,9 @@
         },
         "compileOnly": true
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.NewtonsoftJson/3.0.0.0": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/3.0.0.0": {
         "compile": {
-          "Microsoft.AspNetCore.SignalR.Protocols.NewtonsoftJson.dll": {}
+          "Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {}
         },
         "compileOnly": true
       },
@@ -1412,12 +1572,6 @@
       "netstandard/2.1.0.0": {
         "compile": {
           "netstandard.dll": {}
-        },
-        "compileOnly": true
-      },
-      "Newtonsoft.Json/12.0.0.0": {
-        "compile": {
-          "Newtonsoft.Json.dll": {}
         },
         "compileOnly": true
       },
@@ -1871,7 +2025,7 @@
         },
         "compileOnly": true
       },
-      "System.Reflection.DispatchProxy/4.0.5.0": {
+      "System.Reflection.DispatchProxy.Reference/4.0.5.0": {
         "compile": {
           "System.Reflection.DispatchProxy.dll": {}
         },
@@ -2111,7 +2265,7 @@
         },
         "compileOnly": true
       },
-      "System.Security.Principal.Windows/4.1.1.0": {
+      "System.Security.Principal.Windows.Reference/4.1.1.0": {
         "compile": {
           "System.Security.Principal.Windows.dll": {}
         },
@@ -2329,12 +2483,33 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.NETCore.Platforms/3.0.0-preview4.19212.13": {
+    "Microsoft.AspNetCore.App.Runtime.win-x64/3.0.0-preview5-19227-01": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cBcFp3iIi/c6AK9F/aZxbZaNhWGOLSJD071L9tO8JbyODp38NDKsJ38Xq/KJUCt1EUIlqnyF6PdqOngFuCvD1Q==",
-      "path": "microsoft.netcore.platforms/3.0.0-preview4.19212.13",
-      "hashPath": "microsoft.netcore.platforms.3.0.0-preview4.19212.13.nupkg.sha512"
+      "sha512": "sha512-Qnp4UA7b/yjeUFJtGLXMbh6P9PHOcMgfOmDFjRraKc5P2JXLi0sZyNOQo5ECNiy8OhsZaGCL6Bp3f8QxqxUsOw==",
+      "path": "microsoft.aspnetcore.app.runtime.win-x64/3.0.0-preview5-19227-01",
+      "hashPath": "microsoft.aspnetcore.app.runtime.win-x64.3.0.0-preview5-19227-01.nupkg.sha512"
+    },
+    "Microsoft.NETCore.DotNetAppHost/3.0.0-preview5-27626-15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FEpRjeM6SXYDgllcSPY99OqZlc39L95vNmw9D1ny1u347pf/RY3xH4whQa6KnT/wgy0VMFxY8v09wa3LRBcRAw==",
+      "path": "microsoft.netcore.dotnetapphost/3.0.0-preview5-27626-15",
+      "hashPath": "microsoft.netcore.dotnetapphost.3.0.0-preview5-27626-15.nupkg.sha512"
+    },
+    "Microsoft.NETCore.DotNetHostResolver/3.0.0-preview5-27626-15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FUfVDBjdwGPj2EJGAXLcB1n7pQvpE/kcPogDXXBSbYU6NH+VOFViWjK+h5AscmCd3sm7uLYN/MJKI1sxO1L31g==",
+      "path": "microsoft.netcore.dotnethostresolver/3.0.0-preview5-27626-15",
+      "hashPath": "microsoft.netcore.dotnethostresolver.3.0.0-preview5-27626-15.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/3.0.0-preview5.19224.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MEt1XzSndofi4WBoGaRcMZdy9rqNtZITVZev2PTtXizcNe4csoN7U638Q73M93I/LxroBAI1IB+6HQOuklkKrw==",
+      "path": "microsoft.netcore.platforms/3.0.0-preview5.19224.8",
+      "hashPath": "microsoft.netcore.platforms.3.0.0-preview5.19224.8.nupkg.sha512"
     },
     "Microsoft.NETCore.Targets/1.1.0": {
       "type": "package",
@@ -2343,12 +2518,40 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
-    "runtime.win-x64.Microsoft.NETCore.DotNetAppHost/3.0.0-preview4-27615-11": {
+    "Newtonsoft.Json/12.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-J4YSTnKz4p9+2dGau8a9SOkp57ypLvtz1wQpeS3VC8LDY8DUSmh3hH1yFOB5sIHORIiV21CwuebVAf1co4yrgw==",
-      "path": "runtime.win-x64.microsoft.netcore.dotnetapphost/3.0.0-preview4-27615-11",
-      "hashPath": "runtime.win-x64.microsoft.netcore.dotnetapphost.3.0.0-preview4-27615-11.nupkg.sha512"
+      "sha512": "sha512-rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+      "path": "newtonsoft.json/12.0.2",
+      "hashPath": "newtonsoft.json.12.0.2.nupkg.sha512"
+    },
+    "runtime.win-x64.Microsoft.NETCore.App/3.0.0-preview5-27626-15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-v9MxGNmx5UfQBqLERgtGuopDfeH+9AnR7m6oAyLMlmqQfNI0ddByjxTU6sOeX23eeXmNDR8j0EX/nhVLiS5cvg==",
+      "path": "runtime.win-x64.microsoft.netcore.app/3.0.0-preview5-27626-15",
+      "hashPath": "runtime.win-x64.microsoft.netcore.app.3.0.0-preview5-27626-15.nupkg.sha512"
+    },
+    "runtime.win-x64.Microsoft.NETCore.DotNetHostPolicy/3.0.0-preview5-27626-15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wTtiKcoVsHBZ3snB2g1xPunQX8pL3DAex3OvKwVDxgzATvVBnYx4ePu6quSRZxaOkptAEWp7rIYgKT4aJESHxQ==",
+      "path": "runtime.win-x64.microsoft.netcore.dotnethostpolicy/3.0.0-preview5-27626-15",
+      "hashPath": "runtime.win-x64.microsoft.netcore.dotnethostpolicy.3.0.0-preview5-27626-15.nupkg.sha512"
+    },
+    "runtime.win-x64.Microsoft.NETCore.DotNetHostResolver/3.0.0-preview5-27626-15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TFWVWCo3h18DFsBFyvi82AynpUN3Szh64HVrFi5mESUdHcQyE5JfB+OhPvwe4zGVzlJ1N2gLnFmFIwbJTyXQSw==",
+      "path": "runtime.win-x64.microsoft.netcore.dotnethostresolver/3.0.0-preview5-27626-15",
+      "hashPath": "runtime.win-x64.microsoft.netcore.dotnethostresolver.3.0.0-preview5-27626-15.nupkg.sha512"
+    },
+    "runtime.win-x64.Microsoft.WindowsDesktop.App/3.0.0-preview5-27626-15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rg4FzB0QnUw/HWB1lnYo3h8aDtpKEQrQ7fzFbOZ+Vy/RpnGxVknIyih3EAuyOTupqfCDWSTS8fcq3TMNQXotqA==",
+      "path": "runtime.win-x64.microsoft.windowsdesktop.app/3.0.0-preview5-27626-15",
+      "hashPath": "runtime.win-x64.microsoft.windowsdesktop.app.3.0.0-preview5-27626-15.nupkg.sha512"
     },
     "System.Collections/4.3.0": {
       "type": "package",
@@ -2420,6 +2623,13 @@
       "path": "system.linq/4.3.0",
       "hashPath": "system.linq.4.3.0.nupkg.sha512"
     },
+    "System.Net.Http.WinHttpHandler/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZmsFZIZ4PL2UfUlfj4KCzzAGGE2SF39ENIqtvfgu0bwMEAe3J3CqZr765E2W6eQQtNK08/8DpHcsA0sAKZdEtA==",
+      "path": "system.net.http.winhttphandler/4.4.0",
+      "hashPath": "system.net.http.winhttphandler.4.4.0.nupkg.sha512"
+    },
     "System.Private.DataContractSerialization/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2427,12 +2637,26 @@
       "path": "system.private.datacontractserialization/4.3.0",
       "hashPath": "system.private.datacontractserialization.4.3.0.nupkg.sha512"
     },
+    "System.Private.ServiceModel/4.4.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tsDkr5hwYwxV2LaB3H5BvCltCX57wv7JzwU5q8IV9vrFdzq/e/nPJAj4U5Ny/FzR4sMTVRprVSwl4mZqfFkt4Q==",
+      "path": "system.private.servicemodel/4.4.4",
+      "hashPath": "system.private.servicemodel.4.4.4.nupkg.sha512"
+    },
     "System.Reflection/4.3.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-KMiAFoW7MfJGa9nDFNcfu+FpEdiHpWgTcS2HdMpDvt9saK3y/G4GwprPyzqjFH9NTaGPQeWNHU+iDlDILj96aQ==",
       "path": "system.reflection/4.3.0",
       "hashPath": "system.reflection.4.3.0.nupkg.sha512"
+    },
+    "System.Reflection.DispatchProxy/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xK6JE0mpsBD+T0qu3V6dmVRa06PxAvIIM/zSjouqP7Sk6X+FQj+9XFRz9GmZk9aJGMU1LX6AgTZIlsYZ64QKsw==",
+      "path": "system.reflection.dispatchproxy/4.4.0",
+      "hashPath": "system.reflection.dispatchproxy.4.4.0.nupkg.sha512"
     },
     "System.Reflection.Emit/4.3.0": {
       "type": "package",
@@ -2524,6 +2748,48 @@
       "sha512": "sha512-Wz+0KOukJGAlXjtKr+5Xpuxf8+c8739RI1C+A2BoQZT+wMCCoMDDdO8/4IRHfaVINqL78GO8dW8G2lW/e45Mcw==",
       "path": "system.runtime.serialization.primitives/4.3.0",
       "hashPath": "system.runtime.serialization.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.Security.Principal.Windows/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pP+AOzt1o3jESOuLmf52YQTF7H3Ng9hTnrOESQiqsnl2IbBh1HInsAMHYtoh75iUYV0OIkHmjvveraYB6zM97w==",
+      "path": "system.security.principal.windows/4.4.0",
+      "hashPath": "system.security.principal.windows.4.4.0.nupkg.sha512"
+    },
+    "System.ServiceModel.Duplex/4.4.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-y/XLnKJ+xnuEUjrgJkXeLKCH4A+EwkX2TdOcTdgsEtxWmWq1+RbCjMd0zIlyNrbGD+nM9BxNg9rLVWVAPq81RA==",
+      "path": "system.servicemodel.duplex/4.4.4",
+      "hashPath": "system.servicemodel.duplex.4.4.4.nupkg.sha512"
+    },
+    "System.ServiceModel.Http/4.4.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-f7OWPKqfTaCzjpc6n+/xqNwv7YAHKMiBCPIgwxIXVnf0Vu9+yzfX6tXV9pSSCEFuqJ5tXGLz9MRRExrQEqVUkA==",
+      "path": "system.servicemodel.http/4.4.4",
+      "hashPath": "system.servicemodel.http.4.4.4.nupkg.sha512"
+    },
+    "System.ServiceModel.NetTcp/4.4.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TZUwkBUHK+HgPVpypcnCEzenn+Hly3mQ+QDqDtHKyqVBP2Yt+DAMp3NwuW35mTSMRqna5p9hd0U0vVq5azovOQ==",
+      "path": "system.servicemodel.nettcp/4.4.4",
+      "hashPath": "system.servicemodel.nettcp.4.4.4.nupkg.sha512"
+    },
+    "System.ServiceModel.Primitives/4.4.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Jv882Qt+tSJ2KnLGGMSGPwBvOxfXRncXW0YV/beBKRQ2c6bDbXVXwqaS2U9h+/cK1uL7C4zc66lnC7qvSBqPHw==",
+      "path": "system.servicemodel.primitives/4.4.4",
+      "hashPath": "system.servicemodel.primitives.4.4.4.nupkg.sha512"
+    },
+    "System.ServiceModel.Security/4.4.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8mJj3lUNbBkntouQ3Eg3IF04GxiDrDK2X79+kcfq8V+W7NoYBREgWczaD60ZmW4KKRKnL0q3OnUNJlkzJJfe5w==",
+      "path": "system.servicemodel.security/4.4.4",
+      "hashPath": "system.servicemodel.security.4.4.4.nupkg.sha512"
     },
     "System.Text.Encoding/4.3.0": {
       "type": "package",
@@ -2955,7 +3221,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.SignalR.Protocols.NewtonsoftJson/3.0.0.0": {
+    "Microsoft.AspNetCore.SignalR.Protocols.Json/3.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -3231,11 +3497,6 @@
       "sha512": ""
     },
     "netstandard/2.1.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Newtonsoft.Json/12.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -3615,7 +3876,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Reflection.DispatchProxy/4.0.5.0": {
+    "System.Reflection.DispatchProxy.Reference/4.0.5.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -3815,7 +4076,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Security.Principal.Windows/4.1.1.0": {
+    "System.Security.Principal.Windows.Reference/4.1.1.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

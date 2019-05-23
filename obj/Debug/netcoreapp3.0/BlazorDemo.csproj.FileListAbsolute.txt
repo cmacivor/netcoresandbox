@@ -1,3 +1,7 @@
+C:\Users\macivoce\BlazorDemo\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\macivoce\BlazorDemo\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\macivoce\BlazorDemo\bin\Debug\netcoreapp3.0\Connected Services\ServiceReference1\ConnectedService.json
+C:\Users\macivoce\BlazorDemo\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
 C:\Users\macivoce\BlazorDemo\bin\Debug\netcoreapp3.0\BlazorDemo.exe
 C:\Users\macivoce\BlazorDemo\bin\Debug\netcoreapp3.0\BlazorDemo.deps.json
 C:\Users\macivoce\BlazorDemo\bin\Debug\netcoreapp3.0\BlazorDemo.runtimeconfig.json
@@ -6,6 +10,7 @@ C:\Users\macivoce\BlazorDemo\bin\Debug\netcoreapp3.0\BlazorDemo.dll
 C:\Users\macivoce\BlazorDemo\bin\Debug\netcoreapp3.0\BlazorDemo.pdb
 C:\Users\macivoce\BlazorDemo\bin\Debug\netcoreapp3.0\BlazorDemo.Views.dll
 C:\Users\macivoce\BlazorDemo\bin\Debug\netcoreapp3.0\BlazorDemo.Views.pdb
+C:\Users\macivoce\BlazorDemo\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
 C:\Users\macivoce\BlazorDemo\bin\Debug\netcoreapp3.0\System.Net.Http.WinHttpHandler.dll
 C:\Users\macivoce\BlazorDemo\bin\Debug\netcoreapp3.0\System.ServiceModel.Duplex.dll
 C:\Users\macivoce\BlazorDemo\bin\Debug\netcoreapp3.0\System.ServiceModel.Http.dll
@@ -57,8 +62,3 @@ C:\Users\macivoce\BlazorDemo\obj\Debug\netcoreapp3.0\BlazorDemo.Views.pdb
 C:\Users\macivoce\BlazorDemo\obj\Debug\netcoreapp3.0\BlazorDemo.csproj.CopyComplete
 C:\Users\macivoce\BlazorDemo\obj\Debug\netcoreapp3.0\BlazorDemo.dll
 C:\Users\macivoce\BlazorDemo\obj\Debug\netcoreapp3.0\BlazorDemo.pdb
-c:\Users\macivoce\BlazorDemo\bin\Debug\netcoreapp3.0\appsettings.Development.json
-c:\Users\macivoce\BlazorDemo\bin\Debug\netcoreapp3.0\appsettings.json
-c:\Users\macivoce\BlazorDemo\bin\Debug\netcoreapp3.0\Connected Services\ServiceReference1\ConnectedService.json
-c:\Users\macivoce\BlazorDemo\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
-c:\Users\macivoce\BlazorDemo\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
